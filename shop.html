@@ -4,29 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>shop</title>
 </head>
 
 <body>
+    <header>
+        <!-- Header généralisé -->
+    </header>
     <main>
         <!-- menu -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="www.fashion.com">fashion</a></li>
-                <li><a href="shoes.com">shoes</a></li>
-            </ul>
+        <nav class="menusection">
+            <div>home</div>
+            <div><i class="fa fa-circle"></i></div>
+            <div>fashion</div>
+            <div><i class="fa fa-circle"></i></div>
+            <div>shoes</div>
         </nav>
 
 
         <!-- sous-menu -->
-        <nav>
-            <div>shoes</div>
-            <div>items 1-12 of 36</div>
+        <nav class="menutriage">
+            <div class="titleshoes"><span>shoes</span></div>
+            <div><span class="itemsort">items 1-12 of 36</span></div>
             <div>Sort By <a href="ok.com">Position</a></div>
         </nav>
 
-        <section>
+        <section class="allart">
             <!--premier article-->
             <article class="art1">
                 <figure>
@@ -55,6 +59,10 @@
                         </div>
                         <div class="artrate">
                             <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
                         </div>
                         <div class="artprice">
                             <span class="grey">
@@ -62,10 +70,10 @@
                             </span>
                         </div>
                         <div class="artcolor">
-                            <span>
+                            <span class="circleblack">
                                 <i class="fa fa-circle"></i>
                             </span>
-                            <span>
+                            <span class="circleblue">
                                 <i class="fa fa-circle"></i>
                             </span>
                         </div>
@@ -163,6 +171,10 @@
                         </div>
                         <div class="artrate">
                             <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
                         </div>
                         <div class="artprice">
 
@@ -184,6 +196,10 @@
                             Flower Design Blouse
                         </div>
                         <div class="artrate">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                         </div>
                         <div class="artprice">
@@ -223,6 +239,10 @@
                             denim Jacket
                         </div>
                         <div class="artrate">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                         </div>
                         <div class="artprice">
@@ -269,11 +289,17 @@
                     </header>
                 </div>
             </article>
+            <div class="numberpage">
+                <div><a href="">01</a></div>
+                <div><a href="">02</a></div>
+                <div><a href="">03</a></div>
+                <div><a href=""><i class="far fa-arrow-alt-circle-right"></i></a></div>
+            </div>
         </section>
 
 
         <!-- menu droite -->
-        <nav>
+        <nav class="menudroite">
             <!-- titre -->
             <div>Shop By</div>
             <div class="couleur">
@@ -311,9 +337,9 @@
                 <!-- sous-titre PRICE-->
                 <div>PRICE</div>
                 <!-- regle slide -->
-                <div class="slidecontainer">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                </div>
+                <!-- <div class="slidecontainer"> -->
+                    <!-- <input type="range" min="1" max="100" value="50" class="slider" id="myRange"> -->
+                <!-- </div> -->
             </div>
             <!-- BRAND -->
             <div>
@@ -332,11 +358,9 @@
             <div>You have no items to compare</div>
         </div>
         <!-- number page -->
-        <div>
-            <div><a href="">01</a></div>
-            <div><a href="">02</a></div>
-            <div><a href="">03</a></div>
-            <div><i class="far fa-arrow-alt-circle-right"></i></div>
-        </div>
+
     </main>
+    <footer>
+        <!-- footer généralisé -->
+    </footer>
 </body>
