@@ -1,0 +1,36 @@
+$black:#222;
+$grey:#999;
+$orange:#f68773;
+
+.headerhome{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 100px 1fr 1fr;
+    grid-template-rows: 1;
+    margin: 0px;
+    background-image: url(../../images/abc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    aside{
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+        margin-bottom: auto;
+        a{
+            text-decoration: none;
+            color: $grey;
+        }
+    }
+    article{
+        .splashscr img{
+            grid-column: 1/4;
+            grid-row: 1;
+        }
+        .label > div{
+            display: block;
+            grid-column:3;
+            grid-row: 1;
+        }
+    }
+}
