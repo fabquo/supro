@@ -1,165 +1,342 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>shop</title>
 </head>
+
 <body>
-    
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="www.fashion.com">fashion</a></li>
-            <li><a href="shoes.com">shoes</a></li>
-        </ul>
-    </nav>
-    <nav>
-        <section>shoes</section>
-        <section>items 1-12 of 36</section>
-        <section>Sort By <a href="ok.com"></a>Position</section>
-        
-    </nav>
-    <section>
-        <figure>
-            <img src="resources/prd_03_1_1.jpg" alt="calvin klein">
-            <figcaption>
-                <p>Calvin klein Logo Sweatpants<br></p>
-                <p>$86.00</p>
-            </figcaption>
-        </figure>
-        <figure>
-            <img src="resources/prd_02_1_2_1.jpg" alt="short sleeved">
-            <figcaption>
-                <p>Short Sleeved Hoodie<br></p>
-                <!--star rating-->
-                <p>$59.00</p>
-                <figure>
-                    <img src="resources/dot.png" alt="black dot">
-                    <img src="resources/round (1).png" alt="blue dot">
-                </figure>
-            </figcaption>
-        </figure>
-        <figure>
-            <img src="resources/prd_14_1.jpg" alt="Woleen Tee">
-            <figcaption>
-                <p>Woleen Tee</p>
-                <p>$59.00</p>
-            </figcaption>
-        </figure>
-        <figure>
-            <img src="resources/prd_17_1.jpg" alt="Brown Jacket">
-            <figcaption>
-                <p>Brown Jacket</p>
-                <p>$89.00 $80.00</p>
-            </figcaption>
-        </figure>
-        <figure>
-            <img src="resources/prd_12_1_4.jpg" alt="pink Leather watch">
-            <figcaption>
-                <p>Pink Leather Watch</p>
-                <p>$95.99</p>
-                <p>M XL</p>
-            </figcaption>
-        </figure>
-        <figure>
-            <img src="resources/prd_01_1_1_1.jpg" alt="cuffed beanie">
-            <figcaption>
-                <p>cuffed Beanie</p>
-                <p>$68.00</p>
-            </figcaption>
-        </figure>
-        <figure>
-            <img src="resources/prd_02_1_2_1.jpg" alt="metallic">
-            <figcaption>
-                <p>Metallic Frame Glasses Trendy</p>
-                <!--stars-->
-                <p>$60.50</p>
-            </figcaption>
-        </figure>
-        <figure>
-            <img src="resources/prd_03_1.jpg" alt="flower">
-            <figcaption>
-                <p>Flower Design Blouse</p>
-                <!--stars-->
-                <p>$60.50</p>
-            </figcaption>
-        </figure>
-        <figure>
-            <img src="resources/prd_04_1.jpg" alt="Leather Shop Bag">
-            <figcaption>
-                <p>Leather Shop Bag</p>
-                <p>$59.90</p>
-            </figcaption>
-        </figure>
-        <figure>
-            <img src="resources/prd_14_1_2.jpg" alt="denim Jacket">
-            <figcaption>
-                <!--star-->
-                <p>$45.00</p>
-            </figcaption>
-        </figure>
-        <figure>
-            <img src="resources/prd_15_1_1.jpg" alt="Hooded Sweatshirt">
-            <figcaption>
-                <p>Hooded Sweatshirt</p>
-                <p>$55.00</p>
-            </figcaption>
-        </figure>
-        <figure>
-            <img src="resources/prd_16_2.jpg" alt="Autumn coat">
-            <figcaption>
-                <p>Autumn Coat with Pocjets</p>
-                <p>$33.00</p>
-            </figcaption>
-        </figure>
-    </section>
-    <nav>
-        <section>Shop By</section>
-        <section>
-            <p>Color</p>
-            <figure>
-                <img src="resources/dot.png" alt="Black">
-                <figcaption>
-                    <p>Black</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="resources/round (1).png" alt="blue">
-                <figcaption>
-                    <p>Blue</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="resources/roundB.png" alt="brown">
-                <figcaption>
-                    <p>Brown</p>
-                </figcaption>
-            </figure>
-        </section>
-        <section>
-            <p>SIZE</p>
-            <p>XS</p>
-            <p>S</p>
-            <p>M</p>
-        </section>
-        <section>
-            <p>PRICE</p>
-            <!--regle price-->
-        </section>
-        <section>
-            <p>BRAND</p>
+    <main>
+        <!-- menu -->
+        <nav>
             <ul>
-                <li>Creative</li>
-                <li>wellness</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="www.fashion.com">fashion</a></li>
+                <li><a href="shoes.com">shoes</a></li>
             </ul>
-        </section>
+        </nav>
+
+
+        <!-- sous-menu -->
+        <nav>
+            <div>shoes</div>
+            <div>items 1-12 of 36</div>
+            <div>Sort By <a href="ok.com">Position</a></div>
+        </nav>
+
         <section>
-            <p>Compare Products</p>
-            <p>You have no items to compare.</p>
+            <!--premier article-->
+            <article class="art1">
+                <figure>
+                    <a href=""><img src="resources/prd_03_1_1.jpg" alt="calvin klein"></a>
+                </figure>
+                <div>
+                    <header>
+                        <div class="artname">
+                            Calvin klein Logo Sweatpants
+                        </div>
+                        <div class="artprice">
+                            $86.00
+                        </div>
+                    </header>
+                </div>
+            </article>
+            <!--deuxieme article-->
+            <article class="art2">
+                <figure>
+                    <a href=""><img src="resources/prd_02_1_2_1.jpg" alt="short sleeved"></a>
+                </figure>
+                <div>
+                    <header>
+                        <div class="artname">
+                            Short Sleeved Hoodie
+                        </div>
+                        <div class="artrate">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="artprice">
+                            <span class="grey">
+                                $59.00
+                            </span>
+                        </div>
+                        <div class="artcolor">
+                            <span>
+                                <i class="fa fa-circle"></i>
+                            </span>
+                            <span>
+                                <i class="fa fa-circle"></i>
+                            </span>
+                        </div>
+                    </header>
+                </div>
+            </article>
+            <!-- troisième article -->
+            <article class="art3">
+                <figure>
+                    <a href=""><img src="resources/prd_14_1.jpg" alt="Woleen Tee"></a>
+                </figure>
+                <div>
+                    <header>
+                        <div class="artname">
+                            Woleen Tee
+                        </div>
+                        <div class="artprice">
+                            <span class="grey">
+                                $59.00
+                            </span>
+                        </div>
+                    </header>
+                </div>
+            </article>
+            <!-- quatrieme article -->
+            <article class="art4">
+                <figure>
+                    <a href=""><img src="resources/prd_14_1.jpg" alt="Brown Jacket"></a>
+                </figure>
+                <div>
+                    <header>
+                        <div class="artname">
+                            Brown Jacket
+                        </div>
+                        <div class="artprice">
+                            <span class="rgrey">
+                                $89.00
+                            </span>
+                            <span class="grey">
+                                $80.00
+                            </span>
+                        </div>
+                    </header>
+                </div>
+            </article>
+            <!-- cinquieme article -->
+            <article class="art5">
+                <figure>
+                    <a href=""><img src="resources/prd_12_1_4.jpg" alt="pink Leather watch"></a>
+                </figure>
+                <div>
+                    <header>
+                        <div class="artname">
+                            pink Leather watch
+                        </div>
+                        <div class="artprice">
+                            <span class="grey">
+                                $95.99
+                            </span>
+                        </div>
+                        <div class="artsize">
+                            <span class="sizem">M</span>
+                            <span class="sizexl">XL</span>
+                        </div>
+                    </header>
+                </div>
+            </article>
+            <!-- 6eme article -->
+            <article class="art6">
+                <figure>
+                    <a href=""><img src="resources/prd_01_1_1_1.jpg" alt="cuffed beanie"></a>
+                </figure>
+                <div>
+                    <header>
+                        <div class="artname">
+                            cuffed Beanie
+                        </div>
+                        <div class="artprice">
+                            <span class="grey">
+                                $68.00
+                            </span>
+                        </div>
+                    </header>
+                </div>
+            </article>
+            <!-- 7e article -->
+            <article class="art7">
+                <figure>
+                    <a href=""><img src="resources/prd_02_1_2_1.jpg" alt="metallic"></a>
+                </figure>
+                <div>
+                    <header>
+                        <div class="artname">
+                            Metallic Frame Glasses Trendy
+                        </div>
+                        <div class="artrate">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="artprice">
+
+                            <span class="grey">
+                                $60.50
+                            </span>
+                        </div>
+                    </header>
+                </div>
+            </article>
+            <!-- 8e article -->
+            <article class="art8">
+                <figure>
+                    <a href=""><img src="resources/prd_03_1.jpg" alt="flower"></a>
+                </figure>
+                <div>
+                    <header>
+                        <div class="artname">
+                            Flower Design Blouse
+                        </div>
+                        <div class="artrate">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="artprice">
+                            <span class="grey">
+                                $60.50
+                            </span>
+                        </div>
+                    </header>
+                </div>
+            </article>
+            <!-- 9e article -->
+            <article class="art9">
+                <figure>
+                    <a href=""><img src="resources/prd_04_1.jpg" alt="Leather Shop Bag"></a>
+                </figure>
+                <div>
+                    <header>
+                        <div class="artname">
+                            Leather Shop Bag
+                        </div>
+                        <div class="artprice">
+                            <span class="grey">
+                                $59.90
+                            </span>
+                        </div>
+                    </header>
+                </div>
+            </article>
+            <!-- 10e article -->
+            <article class="art10">
+                <figure>
+                    <a href=""><img src="resources/prd_14_1_2.jpg" alt="denim Jacket"></a>
+                </figure>
+                <div>
+                    <header>
+                        <div class="artname">
+                            denim Jacket
+                        </div>
+                        <div class="artrate">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="artprice">
+                            <span class="grey">
+                                $45.00
+                            </span>
+                        </div>
+                    </header>
+                </div>
+            </article>
+            <!-- 11e article -->
+            <article class="art11">
+                <figure>
+                    <a href=""><img src="resources/prd_15_1_1.jpg" alt="Hooded Sweatshirt"></a>
+                </figure>
+                <div>
+                    <header>
+                        <div class="artname">
+                            Hooded Sweatshirt
+                        </div>
+                        <div class="artprice">
+                            <span class="grey">
+                                $55.00
+                            </span>
+                        </div>
+                    </header>
+                </div>
+            </article>
+            <!-- 12e article -->
+            <article class="art12">
+                <figure>
+                    <a href=""><img src="resources/prd_16_2.jpg" alt="Autumn coat"></a>
+                </figure>
+                <div>
+                    <header>
+                        <div class="artname">
+                            Autumn Coat with Pocjets
+                        </div>
+                        <div class="artprice">
+                            <span class="grey">
+                                $33.00
+                            </span>
+                        </div>
+                    </header>
+                </div>
+            </article>
         </section>
 
-    </nav>
 
+        <!-- menu droite -->
+        <nav>
+            <!-- titre -->
+            <div>Shop By</div>
+            <div class="couleur">
+                <!-- sous-titre Couleur-->
+                <div>COLOR</div>
+                <!-- couleur noir -->
+                <div>
+                    <i class="fa fa-circle"></i>
+                    Black
+                </div>
+                <!-- couleur bleu -->
+                <div>
+                    <i class="fa fa-circle"></i>
+                    Blue
+                </div>
+                <!-- couleur brun -->
+                <div>
+                    <i class="fa fa-circle"></i>
+                    Brown
+                </div>
+            </div>
+            <!-- size -->
+            <div>
+                <!-- sous titre SIZE -->
+                <div>SIZE</div>
+                <!-- taille XS -->
+                <div>XS</div>
+                <!-- taille S -->
+                <div>S</div>
+                <!-- taille M -->
+                <div>M</div>
+            </div>
+            <!-- PRICE -->
+            <div>
+                <!-- sous-titre PRICE-->
+                <div>PRICE</div>
+                <!-- regle slide -->
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+            </div>
+            <!-- BRAND -->
+            <div>
+                <!-- sous-titre BRAND -->
+                <div>BRAND</div>
+                <!-- liste coché -->
+                <ul>
+                    <li>Creative</li>
+                    <li>Wellness</li>
+                </ul>
+            </div>
+        </nav>
+        <!-- compare product -->
+        <div>
+            <div>Compare Products</div>
+            <div>You have no items to compare</div>
+        </div>
+        <!-- number page -->
+        <div>
+            <div><a href="">01</a></div>
+            <div><a href="">02</a></div>
+            <div><a href="">03</a></div>
+            <div><i class="far fa-arrow-alt-circle-right"></i></div>
+        </div>
+    </main>
 </body>
-</html>
