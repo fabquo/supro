@@ -38,7 +38,7 @@ body {
 .bartnameh3 {
   font-size: 44px;
   font-weight: bold;
-  padding-bottom: 15%; }
+  padding-bottom: 50px; }
 
 .cgrey {
   color: #999; }
@@ -52,3 +52,17 @@ body {
   font-size: 44px;
   font-weight: bold;
   padding-bottom: 15%; }
+
+.stitle {
+  margin-top: 10%;
+  font-size: 32px;
+  font-weight: bold;
+  padding-bottom: 10px; }
+
+.artname {
+  font-size: 26px;
+  font-weight: bold;
+  padding-bottom: 5%; }
+
+.artprice {
+  padding-bottom: 25px; }

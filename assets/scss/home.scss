@@ -90,3 +90,65 @@ $orange:#f68773;
         }
     }
 }
+main{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    .gridtop{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 100px;
+        .ts1{
+            grid-row: 1;
+            grid-column: 1;
+            margin-top: 25%;
+            background-image: url(../../images/prd_03_1.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            * .pretop{
+                margin-left: 5%;
+                margin-top: 95%;
+                }
+            }
+        .ts2{
+            grid-row: 1;
+            grid-column: 2 / span 2;
+            background-image: url(../../images/bsl2.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right;
+            * .deutop{
+                width: 25%;
+                margin-left: 20%;
+                margin-top: 10%;
+                }
+        }
+        .ts3{
+            grid-row: 2;
+            grid-column: 1 / span 2;
+            background-image: url(../../images/bsl3.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right;
+            margin-right: 25%;
+            * .tritop{
+                width: 25%;
+                margin-top: 10%;
+            }
+        }
+        .ts4{
+            grid-row: 2;
+            grid-column: 3;
+            background-image: url(../../images/prd_17_1.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right;
+            * .quatop{
+                width: 75%;
+                margin-left: 5%;
+                margin-top: 125%;
+            }
+        }
+    }
+}

@@ -74,3 +74,56 @@
       text-align: left;
       margin-left: 60%;
       margin-top: 8vh; }
+
+main {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto; }
+  main .gridtop {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 100px; }
+    main .gridtop .ts1 {
+      grid-row: 1;
+      grid-column: 1;
+      margin-top: 25%;
+      background-image: url(../../images/prd_03_1.jpg);
+      background-repeat: no-repeat;
+      background-size: contain; }
+      main .gridtop .ts1 * .pretop {
+        margin-left: 5%;
+        margin-top: 95%; }
+    main .gridtop .ts2 {
+      grid-row: 1;
+      grid-column: 2 / span 2;
+      background-image: url(../../images/bsl2.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right; }
+      main .gridtop .ts2 * .deutop {
+        width: 25%;
+        margin-left: 20%;
+        margin-top: 10%; }
+    main .gridtop .ts3 {
+      grid-row: 2;
+      grid-column: 1 / span 2;
+      background-image: url(../../images/bsl3.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right;
+      margin-right: 25%; }
+      main .gridtop .ts3 * .tritop {
+        width: 25%;
+        margin-top: 10%; }
+    main .gridtop .ts4 {
+      grid-row: 2;
+      grid-column: 3;
+      background-image: url(../../images/prd_17_1.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right; }
+      main .gridtop .ts4 * .quatop {
+        width: 75%;
+        margin-left: 5%;
+        margin-top: 125%; }
