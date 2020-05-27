@@ -1,2 +1,54 @@
+@font-face {
+  font-family: roboto;
+  src: url("../fonts/Roboto/Roboto-Regular.ttf"); }
+
 body {
-  color: #222; }
+  font-family: roboto;
+  color: #222;
+  letter-spacing: .2em; }
+
+.preview {
+  font-size: 18px;
+  color: #f68773;
+  padding-bottom: 5%; }
+
+.artnameh1 {
+  font-size: 82px;
+  font-weight: bold;
+  padding-bottom: 10%; }
+
+.link {
+  padding-bottom: 5px;
+  border-bottom: solid 1px #222;
+  font-size: 14px;
+  font-weight: bold;
+  color: #222;
+  text-transform: uppercase;
+  text-decoration: none; }
+
+.wlink {
+  padding-bottom: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border-bottom: solid 1px white; }
+
+.bartnameh3 {
+  font-size: 44px;
+  font-weight: bold;
+  padding-bottom: 15%; }
+
+.cgrey {
+  color: #999; }
+
+.com {
+  font-size: 18px;
+  padding-bottom: 5%; }
+
+.wartnameh3 {
+  color: white;
+  font-size: 44px;
+  font-weight: bold;
+  padding-bottom: 15%; }
