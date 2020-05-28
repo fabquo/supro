@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+
     <title>shop</title>
 </head>
 
@@ -15,26 +17,31 @@
     <main>
         <!-- menu -->
         <nav class="menusection">
-            <div>home</div>
-            <div><i class="fa fa-circle"></i></div>
-            <div>fashion</div>
-            <div><i class="fa fa-circle"></i></div>
-            <div>shoes</div>
+            <ul>
+                <li class="firstli">home</li>
+                <li class="secondli">fashion</li>
+                <li class="thirdli">shoes</li>
+            </ul>
         </nav>
 
-
-        <!-- sous-menu -->
-        <nav class="menutriage">
-            <div class="titleshoes"><span>shoes</span></div>
+        <section class="containercomplet">
+            <!-- sous-menu -->
+            <!-- <nav class="menutriage"> -->
+            <div class="title">Shoes</div>
             <div><span class="itemsort">items 1-12 of 36</span></div>
-            <div>Sort By <a href="ok.com">Position</a></div>
-        </nav>
+            <div class="sortby">
+                <div class="sposition">Sort by <span>position</span></div>
+                <div class="sarrow"><i class="fa fa-angle-down"> </i><i class="fa fa-long-arrow-up"></i></div>
+                <div class="smenu"><i class="fa fa-list"></i> <i class="fa fa-th"></i></div>
 
-        <section class="allart">
+            </div>
+            <!-- </nav> -->
+
+            <!-- <section class="allart"> -->
             <!--premier article-->
             <article class="art1">
                 <figure>
-                    <a href=""><img src="resources/prd_03_1_1.jpg" alt="calvin klein"></a>
+                    <a href=""><img src="resources/prd_03_1_1.jpg" alt="calvin klein" class="imagearticle"></a>
                 </figure>
                 <div>
                     <header>
@@ -289,6 +296,71 @@
                     </header>
                 </div>
             </article>
+
+            <!-- </section> -->
+
+
+            <!-- menu droite -->
+            <nav class="menudroite">
+                <!-- titre -->
+                <div class="title">Shop By</div>
+                <div class="couleur">
+                    <!-- sous-titre Couleur-->
+                    <div class="dsoustitre">COLOR</div>
+                    <!-- couleur noir -->
+                    <div>
+                        <i class="fa fa-circle"></i>
+                        Black
+                    </div>
+                    <!-- couleur bleu -->
+                    <div class="circleblue">
+                        <i class="fa fa-circle"></i>
+                        Blue
+                    </div>
+                    <!-- couleur brun -->
+                    <div class="circlebrown">
+                        <i class="fa fa-circle"></i>
+                        Brown
+                    </div>
+                </div>
+                <!-- size -->
+                <div class="size">
+                    <!-- sous titre SIZE -->
+                    <div class="dsoustitre">SIZE</div>
+                    <!-- taille XS -->
+                    <div>XS</div>
+                    <!-- taille S -->
+                    <div>S</div>
+                    <!-- taille M -->
+                    <div>M</div>
+                </div>
+                <!-- PRICE -->
+                <div class="price">
+                    <!-- sous-titre PRICE-->
+                    <div class="dsoustitre">PRICE</div>
+                    <!-- regle slide -->
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    </div>
+                </div>
+                <!-- BRAND -->
+                <div class="brand">
+                    <!-- sous-titre BRAND -->
+                    <div class="dsoustitre">BRAND</div>
+                    <!-- liste coché -->
+                    <ul>
+                        <li>Creative</li>
+                        <li>Wellness</li>
+                    </ul>
+                </div>
+                <!-- compare product -->
+                <div class="comparep">
+                    <div>Compare Products</div>
+                    <div>You have no items to compare</div>
+                </div>
+            </nav>
+
+            <!-- number page -->
             <div class="numberpage">
                 <div><a href="">01</a></div>
                 <div><a href="">02</a></div>
@@ -296,69 +368,6 @@
                 <div><a href=""><i class="far fa-arrow-alt-circle-right"></i></a></div>
             </div>
         </section>
-
-
-        <!-- menu droite -->
-        <nav class="menudroite">
-            <!-- titre -->
-            <div>Shop By</div>
-            <div class="couleur">
-                <!-- sous-titre Couleur-->
-                <div>COLOR</div>
-                <!-- couleur noir -->
-                <div>
-                    <i class="fa fa-circle"></i>
-                    Black
-                </div>
-                <!-- couleur bleu -->
-                <div>
-                    <i class="fa fa-circle"></i>
-                    Blue
-                </div>
-                <!-- couleur brun -->
-                <div>
-                    <i class="fa fa-circle"></i>
-                    Brown
-                </div>
-            </div>
-            <!-- size -->
-            <div>
-                <!-- sous titre SIZE -->
-                <div>SIZE</div>
-                <!-- taille XS -->
-                <div>XS</div>
-                <!-- taille S -->
-                <div>S</div>
-                <!-- taille M -->
-                <div>M</div>
-            </div>
-            <!-- PRICE -->
-            <div>
-                <!-- sous-titre PRICE-->
-                <div>PRICE</div>
-                <!-- regle slide -->
-                <!-- <div class="slidecontainer"> -->
-                    <!-- <input type="range" min="1" max="100" value="50" class="slider" id="myRange"> -->
-                <!-- </div> -->
-            </div>
-            <!-- BRAND -->
-            <div>
-                <!-- sous-titre BRAND -->
-                <div>BRAND</div>
-                <!-- liste coché -->
-                <ul>
-                    <li>Creative</li>
-                    <li>Wellness</li>
-                </ul>
-            </div>
-        </nav>
-        <!-- compare product -->
-        <div>
-            <div>Compare Products</div>
-            <div>You have no items to compare</div>
-        </div>
-        <!-- number page -->
-
     </main>
     <footer>
         <!-- footer généralisé -->
