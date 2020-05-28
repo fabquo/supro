@@ -156,29 +156,41 @@ main {
     padding-top: 33%; }
 
 .dotd {
-  display: block; }
+  margin-top: 10%;
+  width: 100%; }
   .dotd article {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    background-image: url(../../images/deals_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
     margin-left: 0px;
-    width: 100%;
     height: 700px; }
-    .dotd article figure {
-      grid-column: 1;
-      grid-row: 1;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-      z-index: 1; }
     .dotd article header div.label {
-      grid-column: 1;
-      grid-row: 1;
-      z-index: 2; }
-    .dotd article * .cdgrid {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between; }
-  .dotd * .label {
-    grid-row: 1;
-    grid-column: 1; }
+      width: 60%;
+      height: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 100px;
+      padding-bottom: 100px; }
+      .dotd article header div.label .cdgrid {
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 50%;
+        margin-top: 5%; }
+        .dotd article header div.label .cdgrid span {
+          display: flex;
+          justify-self: center;
+          align-self: center;
+          font-size: 24px;
+          font-weight: bold;
+          padding-top: 5px; }
+        .dotd article header div.label .cdgrid p {
+          text-align: center;
+          margin-block-start: .5em;
+          margin-block-end: 0px;
+          font-size: 12px;
+          padding-bottom: 0px; }
+      .dotd article header div.label div.dotdd {
+        margin-top: 50px; }
