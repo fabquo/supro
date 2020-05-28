@@ -182,3 +182,43 @@ main{
         padding-top: 33%;
     }
 }
+.dotd{
+    display: block;
+    // background-image: url(../../images/deals_image.jpg);
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    // background-position: right;
+    article{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        // display: grid;
+        // grid-template-columns: 1;
+        // grid-template-rows: 1;
+        margin-left: 0px;
+        width: 100%;
+        height: 700px;
+        figure{
+            grid-column: 1;
+            grid-row: 1;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            z-index: 1;
+        }
+        header div.label{
+            grid-column: 1;
+            grid-row: 1;
+            z-index:2
+        }
+        * .cdgrid{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    * .label{
+        grid-row: 1;
+        grid-column: 1;
+    }
+}
