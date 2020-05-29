@@ -2,6 +2,8 @@ $black:#222;
 $grey:#999;
 $orange:#f68773;
 
+@media only screen and (min-width: 769px){
+
 .headerhome{
     display: grid;
     width: 100%;
@@ -447,8 +449,10 @@ main{
     margin-left: auto;
     margin-right: auto;
     .copyright{
-        margin-top: 15px;
         font-size: 12px;
+        strong{
+            color:$black;
+        }
     }
     .social{
         justify-self: center;
@@ -468,4 +472,5 @@ main{
             padding-left: 10px;
         }
     }
+}
 }
