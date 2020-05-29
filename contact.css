@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 100px 1fr fr 1fr 1fr;
+      grid-template-rows: 100px 1fr fr 1fr 1fr;
+      grid-template-areas: "storelocator storelocator storelocator storelocator" "lesformulaires lesformulaires lesformulaires  lesformulaires" "storelist map map map" "storelist map map map" "media media payements payements";
+}
+
+.storelocator {
+  color: white;
+  text-align: center;
+  background-color: #3c3c3c;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: storelocator;
+}
+
+.lesformulaires {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: lesformulaires;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.search1 {
+  background-color: red;
+}
+
+.search2 {
+  background-color: blue;
+}
+
+.storelist {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: storelist;
+}
+
+.storeinterieur {
+  background-color: green;
+}
+
+.map {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: map;
+}
+
+.media {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: media;
+}
+
+.payements {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: payements;
+}
+/*# sourceMappingURL=contact.css.map */
