@@ -83,7 +83,6 @@ $orange:#f68773;
         background-size: cover;
         .aright{
             display: block;
-            width: 50%;
             text-align: left;
             margin-left: 60%;
             margin-top: 8vh;
@@ -157,7 +156,7 @@ main{
     grid-template-columns: 2;
     grid-template-rows: 2;
 }
-.catmenu {
+.catmenu{
     grid-row: 1;
     grid-column: 2;
     ul{
@@ -167,7 +166,7 @@ main{
     justify-content: space-between;
     align-self: end;
     list-style: none;
-    }
+}
 }
 .newarrival{
     grid-row: 1;
@@ -370,6 +369,7 @@ main{
     grid-template-rows: 1;
     width: 100%;
     z-index: 1;
+    margin-top: 5%;
     img{
         width: inherit;
         display: block;
@@ -401,4 +401,71 @@ main{
             }
     }
 }
+}
+.linkbanner{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1;
+    margin-top: 100px;
+    ul{
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: repeat(5, 30%);
+        list-style: none;
+        color: $grey;
+        padding-inline-start: 0px;
+        li:first-of-type{
+            color:$black;
+            padding-bottom: 10%;
+        }
+        li span{
+            color: $grey;
+            font-size: 12px;
+            font-weight: lighter;
+            i.google{
+                font-size: 2em;
+                float: left;
+            }
+        }
+        li a{
+            color: $grey;
+            font-size: 12px;
+            font-weight: lighter;
+        }
+    }
+}
+.ban{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1;
+    width: 60%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    .copyright{
+        margin-top: 15px;
+        font-size: 12px;
+    }
+    .social{
+        justify-self: center;
+        margin-top: 10px;
+        a
+        {color:$grey;
+        }
+    }
+    .payement{
+        display:flex;
+        justify-self: right;
+        figure{
+            margin-block-end: 0px;
+            margin-block-start: 0px;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-left: 10px;
+        }
+    }
 }

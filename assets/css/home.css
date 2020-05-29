@@ -70,7 +70,6 @@
     background-size: cover; }
     .homebanner .hbanner3 .aright {
       display: block;
-      width: 50%;
       text-align: left;
       margin-left: 60%;
       margin-top: 8vh; }
@@ -311,7 +310,8 @@ main {
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 1;
   width: 100%;
-  z-index: 1; }
+  z-index: 1;
+  margin-top: 5%; }
   .followbanner img {
     width: inherit;
     display: block;
@@ -338,3 +338,60 @@ main {
         color: white;
         font-weight: bold;
         font-size: 18px; }
+
+.linkbanner {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1;
+  margin-top: 100px; }
+  .linkbanner ul {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(5, 30%);
+    list-style: none;
+    color: #999;
+    padding-inline-start: 0px; }
+    .linkbanner ul li:first-of-type {
+      color: #222;
+      padding-bottom: 10%; }
+    .linkbanner ul li span {
+      color: #999;
+      font-size: 12px;
+      font-weight: lighter; }
+      .linkbanner ul li span i.google {
+        font-size: 2em;
+        float: left; }
+    .linkbanner ul li a {
+      color: #999;
+      font-size: 12px;
+      font-weight: lighter; }
+
+.ban {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1;
+  width: 60%;
+  margin-top: 5%;
+  padding-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto; }
+  .ban .copyright {
+    margin-top: 15px;
+    font-size: 12px; }
+  .ban .social {
+    justify-self: center;
+    margin-top: 10px; }
+    .ban .social a {
+      color: #999; }
+  .ban .payement {
+    display: flex;
+    justify-self: right; }
+    .ban .payement figure {
+      margin-block-end: 0px;
+      margin-block-start: 0px;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-left: 10px; }

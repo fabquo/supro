@@ -12,7 +12,6 @@ body{
     font-family:roboto;
     color: $black;
     letter-spacing: .2em;
-    overflow-x: hidden;
 }
 
 .preview{
@@ -119,7 +118,7 @@ body{
 }
 .size{
     display: inline-block;
-    background-color: $grey;
+    background-color: rgba(200,200,200, 0.5);
     width: 27px;
     height: 22px;
     text-align: center;
