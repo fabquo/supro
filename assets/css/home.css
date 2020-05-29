@@ -214,7 +214,7 @@ main {
           align-self: center;
           font-size: 24px;
           font-weight: bold;
-          padding-top: 5px; }
+          padding-top: 20px; }
         .dotd article header div.label .cdgrid p {
           text-align: center;
           margin-block-start: .5em;
@@ -244,6 +244,28 @@ main {
     grid-column: 2;
     justify-self: right;
     align-self: initial; }
+  .lastnews div.subscribe {
+    grid-row: 1;
+    grid-column: 2;
+    width: 100%;
+    margin-top: 100px;
+    border-bottom: solid 0.5px #999;
+    padding-bottom: 5px; }
+    .lastnews div.subscribe i {
+      font-size: 16px;
+      padding-top: 15px;
+      float: left;
+      width: 5%; }
+    .lastnews div.subscribe input {
+      font-size: 16px;
+      width: 50%;
+      border: none; }
+    .lastnews div.subscribe a {
+      display: block;
+      width: 20%;
+      float: right;
+      padding-top: 15px;
+      text-align: right; }
 
 .lastgrid {
   display: grid;
@@ -283,3 +305,36 @@ main {
       text-align: center;
       bottom: 150px;
       font-size: 36px; }
+
+.followbanner {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1;
+  width: 100%;
+  z-index: 1; }
+  .followbanner img {
+    width: inherit;
+    display: block;
+    object-fit: cover; }
+  .followbanner .followbloc {
+    grid-column: 4;
+    z-index: 2;
+    display: block;
+    width: 50%;
+    height: 80px;
+    justify-self: center;
+    padding: 10px;
+    background-color: #f68773;
+    text-align: center;
+    margin-top: -50%; }
+    .followbanner .followbloc div {
+      padding-bottom: 10px;
+      padding-top: 10px; }
+      .followbanner .followbloc div .follow {
+        color: white;
+        padding-bottom: 5px;
+        font-size: 12px; }
+      .followbanner .followbloc div .hashtag {
+        color: white;
+        font-weight: bold;
+        font-size: 18px; }
