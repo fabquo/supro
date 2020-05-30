@@ -89,27 +89,27 @@ body {
     padding-bottom: 5px; }
 
 .artrate {
+  display: flex;
+  flex-direction: row;
   padding-bottom: 5px; }
 
 .checked {
   color: #f68773; }
 
-.artcolor *.red {
-  color: red; }
-
-.artcolor *.orange {
-  color: orange; }
-
-.artcolor *.blue {
-  color: blue; }
+.artcolor {
+  display: flex;
+  flex-direction: row; }
+  .artcolor *.red {
+    color: red; }
+  .artcolor *.orange {
+    color: orange; }
+  .artcolor *.blue {
+    color: blue; }
 
 .size {
-  display: inline-block;
   background-color: rgba(200, 200, 200, 0.5);
-  width: 27px;
-  height: 22px;
   text-align: center;
-  padding-top: 5px;
+  padding-left: 2px;
   border-radius: 50%; }
 
 .promo {
