@@ -74,7 +74,7 @@
       .homebanner .hbanner3 .aright {
         display: block;
         text-align: left;
-        margin-left: 60%;
+        margin-left: 40%;
         margin-top: 8vh; }
   main {
     width: 60%;
@@ -142,7 +142,7 @@
       margin-top: 30%;
       display: flex;
       flex-direction: row;
-      justify-content: right;
+      justify-content: space-between;
       align-self: end;
       list-style: none; }
   .newarrival {
@@ -155,7 +155,8 @@
     align-self: end; }
   .gridgallery {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; }
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%; }
     .gridgallery :nth-child(1) {
       margin-inline-start: 0px;
       margin-inline-end: 0px; }
@@ -182,6 +183,15 @@
       grid-column: 2;
       text-align: center;
       padding-top: 33%; }
+    .gridgallery figure {
+      display: block;
+      margin-block-start: 0px;
+      margin-block-end: 0px;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px; }
+      .gridgallery figure img {
+        max-height: 250px;
+        max-width: 100%; }
   .dotd {
     margin-top: 10%;
     width: 100%; }
@@ -237,7 +247,8 @@
       grid-column: 1 / 3;
       grid-row: 2; }
     .lastnews div.morenews {
-      grid-row: 2;
+      margin-top: 100px;
+      grid-row: 1;
       grid-column: 2;
       justify-self: right;
       align-self: initial; }
@@ -303,7 +314,6 @@
   .followbanner {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 1;
     width: 100%;
     z-index: 1;
     margin-top: 5%; }
