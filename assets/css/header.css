@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+header {
+  display: grid;
+  height: 135px;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "img nav form section";
+  padding-top: 25px;
+  padding-left: 80px; }
+
+img {
+  padding-top: 5%;
+  grid-area: img; }
+
+nav {
+  grid-area: nav;
+  font-size: 18px; }
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none; }
+
+form {
+  grid-area: form;
+  display: flex;
+  justify-content: flex-end;
+  height: 30px;
+  padding-top: 3%; }
+
+section {
+  grid-area: section;
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-evenly;
+  padding-top: 7%; }

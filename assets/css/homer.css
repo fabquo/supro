@@ -755,20 +755,28 @@
       grid-area: img1; }
     .lastgrid :nth-child(2) {
       grid-area: tex1;
-      margin-top: 5%;
+      margin-top: 10%;
       margin-bottom: 5%; }
+      .lastgrid :nth-child(2) .autor {
+        margin-top: 0%; }
     .lastgrid :nth-child(3) {
       grid-area: img2;
       margin-bottom: 5%;
       margin-right: 0%; }
     .lastgrid :nth-child(4) {
-      grid-area: tex2; }
+      grid-area: tex2;
+      margin-bottom: 5%; }
+      .lastgrid :nth-child(4) .autor {
+        margin-top: 0%; }
     .lastgrid :nth-child(5) {
       grid-area: img3;
       margin-left: 0px;
       margin-bottom: 5%; }
     .lastgrid :nth-child(6) {
-      grid-area: tex3; }
+      grid-area: tex3;
+      margin-bottom: 5%; }
+      .lastgrid :nth-child(6) .autor {
+        margin-top: 0%; }
     .lastgrid figure {
       display: block;
       margin-block-start: 0px;
@@ -780,7 +788,7 @@
       .lastgrid figure div {
         position: relative;
         margin-top: 0px;
-        top: -50%;
+        top: -90%;
         text-align: center;
         font-size: 36px; }
   .followbanner {
@@ -851,7 +859,7 @@
       grid-column: 2;
       grid-row: 2;
       grid-template-columns: 100%;
-      grid-template-rows: repeat(5, 25%);
+      grid-template-rows: repeat(5, 20%);
       list-style: none;
       color: #999;
       padding-inline-start: 0px;
@@ -870,7 +878,7 @@
           float: left; }
       .linkbanner ul:nth-child(2) li a {
         color: #999;
-        font-size: 10px;
+        font-size: 8px;
         font-weight: lighter;
         letter-spacing: .2em; }
     .linkbanner ul:nth-child(3) {
@@ -878,7 +886,7 @@
       grid-column: 3;
       grid-row: 2;
       grid-template-columns: 100%;
-      grid-template-rows: repeat(5, 25%);
+      grid-template-rows: repeat(5, 20%);
       list-style: none;
       color: #999;
       padding-inline-start: 0px;
@@ -897,7 +905,7 @@
           float: left; }
       .linkbanner ul:nth-child(3) li a {
         color: #999;
-        font-size: 10px;
+        font-size: 8px;
         font-weight: lighter;
         letter-spacing: .2em; }
     .linkbanner ul:nth-child(4) {
@@ -905,11 +913,11 @@
       grid-column: 2;
       grid-row: 3;
       grid-template-columns: 100%;
-      grid-template-rows: repeat(5, 25%);
+      grid-template-rows: repeat(5, 20%);
       list-style: none;
       color: #999;
       padding-inline-start: 0px;
-      width: 0px; }
+      width: 100%; }
       .linkbanner ul:nth-child(4) li:first-of-type {
         color: #222;
         padding-bottom: 10%;
@@ -924,42 +932,41 @@
           float: left; }
       .linkbanner ul:nth-child(4) li a {
         color: #999;
-        font-size: 10px;
+        font-size: 8px;
         font-weight: lighter;
-        letter-spacing: .2em; } }
-
-.ban {
-  display: grid;
-  grid-template-columns: 70% 30%;
-  width: 85%;
-  margin-top: 5%;
-  padding-bottom: 5%;
-  margin-left: auto;
-  margin-right: auto; }
-  .ban .copyright {
-    grid-column: 1 / 2;
-    font-size: 12px;
-    letter-spacing: normal; }
-    .ban .copyright strong {
-      color: #222; }
-  .ban .social {
-    visibility: hidden;
-    width: 0px;
-    display: flex;
-    justify-self: right;
-    margin-top: 10px; }
-    .ban .social a {
-      color: #999;
-      width: 0px; }
-  .ban .payement {
-    visibility: hidden;
-    display: flex;
-    justify-self: right;
-    width: 0px; }
-    .ban .payement figure {
+        letter-spacing: .2em; }
+  .ban {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    width: 85%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto; }
+    .ban .copyright {
+      grid-column: 1 / 2;
+      font-size: 12px;
+      letter-spacing: normal; }
+      .ban .copyright strong {
+        color: #222; }
+    .ban .social {
+      visibility: hidden;
       width: 0px;
-      margin-block-end: 0px;
-      margin-block-start: 0px;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-      padding-left: 10px; }
+      display: flex;
+      justify-self: right;
+      margin-top: 10px; }
+      .ban .social a {
+        color: #999;
+        width: 0px; }
+    .ban .payement {
+      visibility: hidden;
+      display: flex;
+      justify-self: right;
+      width: 0px; }
+      .ban .payement figure {
+        width: 0px;
+        margin-block-end: 0px;
+        margin-block-start: 0px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-left: 10px; } }
