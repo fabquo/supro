@@ -119,7 +119,7 @@
                             <span class="rgrey">
                                 $89.00
                             </span>
-                            <span class="grey">
+                            <span class="newprice">
                                 $80.00
                             </span>
                         </div>
@@ -142,8 +142,9 @@
                             </span>
                         </div>
                         <div class="artsize">
-                            <span class="sizem">M</span>
-                            <span class="sizexl">XL</span>
+                            <span class="sizecircle">&nbsp;M&nbsp;</span>
+                            &nbsp;
+                            <span class="sizecircle">&nbsp;XS&nbsp;</span>
                         </div>
                     </header>
                 </div>
@@ -324,15 +325,16 @@
                     </div>
                 </div>
                 <!-- size -->
-                <div class="size">
+
                     <!-- sous titre SIZE -->
                     <div class="dsoustitre">SIZE</div>
+                    <div class="size">
                     <!-- taille XS -->
-                    <div>XS</div>
+                    <div><span class="sizesquare">&nbsp;XS&nbsp;</span></div>
                     <!-- taille S -->
-                    <div>S</div>
+                    <div><span class="sizesquare">&nbsp;S&nbsp;</span></div>
                     <!-- taille M -->
-                    <div>M</div>
+                    <div><span class="sizesquare">&nbsp;M&nbsp;</span></div>
                 </div>
                 <!-- PRICE -->
                 <div class="price">
@@ -340,7 +342,20 @@
                     <div class="dsoustitre">PRICE</div>
                     <!-- regle slide -->
                     <div class="slidecontainer">
-                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                        <input type="range" min="0" max="100" step="10" list="tickmarks" class="slider">
+                        <datalist id="tickmarks">
+                            <option value="0" label="0%">
+                            <option value="10">
+                            <option value="20">
+                            <option value="30">
+                            <option value="40">
+                            <option value="50" label="50%">
+                            <option value="60">
+                            <option value="70">
+                            <option value="80">
+                            <option value="90">
+                            <option value="100" label="100%">
+                          </datalist>
                     </div>
                 </div>
                 <!-- BRAND -->
