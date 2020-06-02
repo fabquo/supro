@@ -1196,8 +1196,9 @@ main{
         }
         :nth-child(2){
             grid-area: tex1;
-            margin-top: 10%;
-            margin-bottom: 5%;
+            div{
+                margin-top: 40px;
+            }
             .autor{
                 margin-top: 0%;
             }
@@ -1233,13 +1234,16 @@ main{
         margin-block-end: 0px;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
+        margin-bottom: 5%;
+
         img{
             width: 100%;
         }
         div{
             position: relative;
+            top: -50%;
+            transform: translateY(-50%);
             margin-top: 0px;
-            top: -90%;
             text-align: center;
             font-size: 36px;
         }
