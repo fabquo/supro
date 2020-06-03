@@ -1,6 +1,10 @@
 @font-face {
-    font-family: roboto;
+    font-family: robotobold;
     src: url("resources/Roboto/Roboto-Medium.ttf");
+}
+@font-face{
+    font-family: roboto;
+    src: url("resources/Roboto/Roboto-Regular.ttf");
 }
 $black:#222;
 $grey:#999;
@@ -39,12 +43,13 @@ body{
     }
     .sizecircle{
         border-radius: 50% 50% 50% 50%;
-        background-color: $grey;
+        background-color: rgba(200, 200, 200, 0.5);
     }
     .sizesquare{
         border: solid;
         margin-right: 5px;
         color: $grey;
+        border-width: thin;
     }
     .slidecontainer{
         width: 100%;
@@ -235,9 +240,19 @@ body{
 
     .numberpage {
         grid-row: 6;
-        grid-column: span 3;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        grid-column: 2;
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: space-around;
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+        }
+
+
+
     }
 }

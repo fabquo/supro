@@ -1,0 +1,65 @@
+@font-face {
+  font-family: robotobold;
+  src: url("resources/Roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: roboto;
+  src: url("resources/Roboto/Roboto-Regular.ttf");
+}
+
+body {
+  font-family: roboto;
+  color: #222;
+}
+
+body .title {
+  font-size: 24px;
+  color: #222;
+  font-weight: bold;
+  letter-spacing: 0;
+}
+
+body .title a {
+  font-size: 24px;
+  color: #222;
+  font-weight: bold;
+  letter-spacing: 0;
+}
+
+body .fa-star {
+  color: #f68773;
+}
+
+body .circleblue i {
+  color: #0457C0;
+}
+
+body .circlebrown i {
+  color: #8C4B21;
+}
+
+body .artprice {
+  color: #999;
+}
+
+body .rgrey {
+  text-decoration: line-through;
+}
+
+body .newprice {
+  color: #222;
+}
+
+body .sizecircle {
+  border-radius: 50% 50% 50% 50%;
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+body .sizesquare {
+  border: solid;
+  margin-right: 5px;
+  color: #999;
+  border-width: thin;
+}
+/*# sourceMappingURL=apparence.css.map */

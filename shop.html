@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="apparence.css">
+    <link rel="stylesheet" href="disposition.css">
 
     <title>shop</title>
 </head>
@@ -28,7 +29,7 @@
             <!-- sous-menu -->
             <!-- <nav class="menutriage"> -->
             <div class="title">Shoes</div>
-            <div><span class="itemsort">items 1-12 of 36</span></div>
+            <div class="itemsort"><span class="itemsort">items 1-12 of 36</span></div>
             <div class="sortby">
                 <div class="sposition">Sort by <span>position</span></div>
                 <div class="sarrow"><i class="fa fa-angle-down"> </i><i class="fa fa-long-arrow-up"></i></div>
@@ -305,86 +306,92 @@
             <nav class="menudroite">
                 <!-- titre -->
                 <div class="title">Shop By</div>
-                <div class="couleur">
-                    <!-- sous-titre Couleur-->
-                    <div class="dsoustitre">COLOR</div>
-                    <!-- couleur noir -->
-                    <div>
-                        <i class="fa fa-circle"></i>
-                        Black
+                    <div class="couleur">
+                        <!-- sous-titre Couleur-->
+                        <div class="dsoustitre">COLOR</div>
+                        <!-- couleur noir -->
+                        <div>
+                            <i class="fa fa-circle"></i>
+                            Black
+                        </div>
+                        <!-- couleur bleu -->
+                        <div class="circleblue">
+                            <i class="fa fa-circle"></i>
+                            Blue
+                        </div>
+                        <!-- couleur brun -->
+                        <div class="circlebrown">
+                            <i class="fa fa-circle"></i>
+                            Brown
+                        </div>
                     </div>
-                    <!-- couleur bleu -->
-                    <div class="circleblue">
-                        <i class="fa fa-circle"></i>
-                        Blue
-                    </div>
-                    <!-- couleur brun -->
-                    <div class="circlebrown">
-                        <i class="fa fa-circle"></i>
-                        Brown
-                    </div>
-                </div>
-                <!-- size -->
+                    <!-- size -->
 
                     <!-- sous titre SIZE -->
                     <div class="dsoustitre">SIZE</div>
                     <div class="size">
-                    <!-- taille XS -->
-                    <div><span class="sizesquare">&nbsp;XS&nbsp;</span></div>
-                    <!-- taille S -->
-                    <div><span class="sizesquare">&nbsp;S&nbsp;</span></div>
-                    <!-- taille M -->
-                    <div><span class="sizesquare">&nbsp;M&nbsp;</span></div>
-                </div>
-                <!-- PRICE -->
-                <div class="price">
-                    <!-- sous-titre PRICE-->
-                    <div class="dsoustitre">PRICE</div>
-                    <!-- regle slide -->
-                    <div class="slidecontainer">
-                        <input type="range" min="0" max="100" step="10" list="tickmarks" class="slider">
-                        <datalist id="tickmarks">
-                            <option value="0" label="0%">
-                            <option value="10">
-                            <option value="20">
-                            <option value="30">
-                            <option value="40">
-                            <option value="50" label="50%">
-                            <option value="60">
-                            <option value="70">
-                            <option value="80">
-                            <option value="90">
-                            <option value="100" label="100%">
-                          </datalist>
+                        <!-- taille XS -->
+                        <div><span class="sizesquare">&nbsp;XS&nbsp;</span></div>
+                        <!-- taille S -->
+                        <div><span class="sizesquare">&nbsp;S&nbsp;</span></div>
+                        <!-- taille M -->
+                        <div><span class="sizesquare">&nbsp;M&nbsp;</span></div>
                     </div>
-                </div>
-                <!-- BRAND -->
-                <div class="brand">
-                    <!-- sous-titre BRAND -->
-                    <div class="dsoustitre">BRAND</div>
-                    <!-- liste coché -->
-                    <ul>
-                        <li>Creative</li>
-                        <li>Wellness</li>
-                    </ul>
-                </div>
-                <!-- compare product -->
-                <div class="comparep">
-                    <div>Compare Products</div>
-                    <div>You have no items to compare</div>
-                </div>
+                    <!-- PRICE -->
+                    <div class="price">
+                        <!-- sous-titre PRICE-->
+                        <div class="dsoustitre">PRICE</div>
+                        <!-- regle slide -->
+                        <div class="slidecontainer">
+                            <input type="range" min="0" max="100" step="10" list="tickmarks" class="slider">
+                            <datalist id="tickmarks">
+                                <option value="0" label="0%">
+                                <option value="10">
+                                <option value="20">
+                                <option value="30">
+                                <option value="40">
+                                <option value="50" label="50%">
+                                <option value="60">
+                                <option value="70">
+                                <option value="80">
+                                <option value="90">
+                                <option value="100" label="100%">
+                            </datalist>
+                        </div>
+                    </div>
+                    <!-- BRAND -->
+                    <div class="brand">
+                        <!-- sous-titre BRAND -->
+                        <div class="dsoustitre">BRAND</div>
+                        <!-- liste coché -->
+                        <ul>
+                            <li>Creative</li>
+                            <li>Wellness</li>
+                        </ul>
+                    </div>
+                    <!-- compare product -->
+                    <div class="comparep">
+                        <div>Compare Products</div>
+                        <div>You have no items to compare</div>
+                    </div>
             </nav>
 
             <!-- number page -->
             <div class="numberpage">
-                <div><a href="">01</a></div>
-                <div><a href="">02</a></div>
-                <div><a href="">03</a></div>
-                <div><a href=""><i class="far fa-arrow-alt-circle-right"></i></a></div>
+                <ul>
+                    <li>01</li>
+                    <li>02</li>
+                    <li>03</li>
+                    <li><img src="resources/right-chevron.png" alt=""></li>
+                </ul>
             </div>
+            <i class="fa fa-ellipsis-h"></i>
         </section>
+
     </main>
     <footer>
         <!-- footer généralisé -->
     </footer>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="app.js"></script>
 </body>

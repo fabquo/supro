@@ -1,6 +1,11 @@
 @font-face {
-  font-family: roboto;
+  font-family: robotobold;
   src: url("resources/Roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: roboto;
+  src: url("resources/Roboto/Roboto-Regular.ttf");
 }
 
 body {
@@ -42,13 +47,14 @@ body .newprice {
 
 body .sizecircle {
   border-radius: 50% 50% 50% 50%;
-  background-color: #999;
+  background-color: rgba(200, 200, 200, 0.5);
 }
 
 body .sizesquare {
   border: solid;
   margin-right: 5px;
   color: #999;
+  border-width: thin;
 }
 
 body .slidecontainer {
@@ -285,7 +291,11 @@ body .menudroite .dsoustitre {
 body .numberpage {
   -ms-grid-row: 6;
   grid-row: 6;
-  grid-column: span 3;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+body .numberpage ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,8 +303,12 @@ body .numberpage {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
 }
 /*# sourceMappingURL=style.css.map */
