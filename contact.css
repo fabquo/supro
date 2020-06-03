@@ -9,7 +9,6 @@ body {
 }
 
 main {
-  width: 76%;
   margin: auto;
   padding: auto;
   display: -ms-grid;
@@ -37,8 +36,11 @@ main {
   border: 1px solid black;
 }
 
+.search1 p {
+  padding: 10px;
+}
+
 .int1 {
-  background-color: #e4c5c5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,7 +56,6 @@ main {
 }
 
 .int2 {
-  background-color: #00ffaa;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,37 +71,38 @@ main {
 }
 
 .int3button {
-  background-color: #001aff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-left: 20px;
+  margin: 20px;
+  margin-top: 30px;
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  text-align: center;
 }
 
 .search2 {
   width: 405px;
   margin-top: 150px;
-  -ms-grid-row: 2;
-  grid-row: 2;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
   margin-left: 30px;
   border: 1px solid black;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: (1fr)[4];
-      grid-template-rows: repeat(4, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.search2 p {
+  padding: 10px;
 }
 
 .interieur1 {
-  background-color: #88b64b;
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .interieur1 label input {
@@ -108,9 +110,10 @@ main {
 }
 
 .interieur2 {
-  background: #dab8da;
   padding-left: 20px;
   padding-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .interieur2 label input {
@@ -118,8 +121,13 @@ main {
 }
 
 .interieur3 {
-  background-color: cornflowerblue;
-  padding-left: 20px;
+  margin: 20px;
+  margin-top: 100px;
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  text-align: center;
 }
 
 .storelist {
