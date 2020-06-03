@@ -1,6 +1,9 @@
 $black:#222;
 $grey:#999;
 $orange:#f68773;
+$bgrey: rgba($color: #999999, $alpha: 0.5);
+
+
 
 @mixin figmargin{
 
@@ -8,6 +11,14 @@ $orange:#f68773;
     margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+}
+.subtitle{
+    font-size:24px;
+    font-weight: bold;
+}
+.comments{
+    font-size: 12px;
+    letter-spacing: .1em;
 }
 
 @media only screen and (min-width: 769px){
@@ -19,7 +30,7 @@ $orange:#f68773;
     grid-template-rows: 50px;
     grid-template-areas: "img nav form section";
     padding-left: 4%;
-    border-bottom: solid $grey 1px;
+    border-bottom: solid $bgrey 1px;
   
   img {
     padding-top: 5%;
@@ -58,9 +69,9 @@ $orange:#f68773;
     margin-top: 3%;
     input{
         border:{
-            left:solid 1px $grey;
-            top:solid 1px $grey;
-            bottom:solid 1px $grey;
+            left:solid 1px $bgrey;
+            top:solid 1px $bgrey;
+            bottom:solid 1px $bgrey;
             right:none;
         }
         padding-left: 5px;
@@ -73,9 +84,9 @@ $orange:#f68773;
         background-color: white;
         border:{
             left:none;
-            top:solid 1px $grey;
-            bottom:solid 1px $grey;
-            right:solid 1px $grey;
+            top:solid 1px $bgrey;
+            bottom:solid 1px $bgrey;
+            right:solid 1px $bgrey;
         }
     }
 }
@@ -84,7 +95,6 @@ $orange:#f68773;
     grid-area: section;
     display: flex;
     justify-content: flex-end;
-    // justify-content: space-evenly;
     padding-top: 8%;
         a{
         padding-right: 15px;
@@ -119,8 +129,8 @@ $orange:#f68773;
         }
         .gallerie{
             display:grid;
-            column-gap: 25px;
-            grid-template-columns: 50% 50%;
+            column-gap: 5%;
+            grid-template-columns: 1fr 1fr;
             grid-template-rows: repeat(11, auto) 100px;
             .grosplan{
                 @include figmargin;
@@ -181,24 +191,29 @@ $orange:#f68773;
             @include figmargin;
         }
         .colorselect{
-            font-size: 12px;
+            font-size: 20px;
             letter-spacing: 0.1em;
+            margin-top: 15px;
+            i{
+                padding-right: 10px;
+            }
         }
         .artsize{
-            font-size: 12px;
+            font-size: 16px;
         }
         div.select{
             display: flex;
             flex-direction: row;
             height: 20px;
             justify-content: space-between;
+            margin-top: 15px;
             .qty{
                 display: flex;
-                border: solid 1px $grey;
+                border: solid 2px $grey;
                 float: left;
-                height: 20px;
+                height: 18px;
                 padding: 10px;
-                width: 30%;
+                width: 40%;
                 justify-content: space-between;
                 i{
                     font-size: 12px;
@@ -224,6 +239,91 @@ $orange:#f68773;
                 margin-top: 15px;
             }
         }
-
+        div.buy{
+            display: block;
+            height: 42px;
+            margin-top: 15px;
+            width: 100%;
+            .cart{
+                background: $black;
+                color: white;
+                font-size: 12px;
+                width: 100%;
+                height: 27px;
+                @include figmargin;
+                text-align: center;
+                vertical-align: middle;
+                padding-top: 15px;
+                }
+        }
+        div.resume{
+            grid-column: 2;
+            border-top: solid 1px $bgrey;
+            p{
+                font-size: 12px;
+            }
+        }
+    div.lasttab{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        .banner{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            border-top: solid 1px $bgrey;
+            border-bottom: solid 1px $bgrey;
+            font-size: 14px ;
+            letter-spacing: .1em;
+            grid-column: 1 / 5;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            span{
+                padding-right: 15px;
+            }
+        }
+        .introduction{
+            grid-column: 1 / 3;
+            margin-top: 10%;
+        }
+        .features{
+            grid-column: 1 / 3;
+            margin-top: 10%;
+            li{
+                margin-top: 10px;
+            }
+        }
+        .imgprd{
+            grid-column: 3 / 5;
+            grid-row: 2 / 4;
+            margin-top: 10%;
+            figure{
+                @include figmargin()
+                margin-left: 10%;
+                img{
+                    width:100%;
+                }
+            }
+        }
+        .rproduct{
+            grid-column: 1 / 5;
+            margin-top: 10%;
+            .subtitle{
+                text-align: center;
+            }
+            div{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                height:30px;
+                span.cgrey.comments{
+                    margin-top: 3px;
+                }
+                span a{
+                    padding-left: .5em;
+                }
+            }
+        }
+    }
     }
 }

@@ -43,6 +43,14 @@ body {
   text-decoration: none;
   border-bottom: solid 1px white; }
 
+.wlinkwou {
+  padding-bottom: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  text-decoration: none; }
+
 .bartnameh3 {
   font-size: 44px;
   font-weight: bold;
