@@ -32,6 +32,9 @@ body{
     .fa-star{
         color: $orange;
     }
+    .circleblack i{
+        color: $black;
+    }
     .circleblue i{
         color: $blue;
     }
@@ -56,6 +59,17 @@ body{
         margin-right: 5px;
         color: $grey;
         border-width: thin;
+    }
+    .menudroite{
+        padding-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: $grey;
+  .dsoustitre{
+      color: $black;
+      font-size: 16px;
+  }
+
     }
     footer{
         .sociaux a{

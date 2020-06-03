@@ -32,6 +32,10 @@ body .fa-star {
   color: #f68773;
 }
 
+body .circleblack i {
+  color: #222;
+}
+
 body .circleblue i {
   color: #0457C0;
 }
@@ -62,6 +66,18 @@ body .sizesquare {
   margin-right: 5px;
   color: #999;
   border-width: thin;
+}
+
+body .menudroite {
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #999;
+}
+
+body .menudroite .dsoustitre {
+  color: #222;
+  font-size: 16px;
 }
 
 body footer .sociaux a {
