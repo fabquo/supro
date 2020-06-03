@@ -16,7 +16,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 15%;
+    width: 18%;
   }
   body .menusection ul .firstli {
     list-style: none;
@@ -26,8 +26,8 @@
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-    -ms-grid-rows: 30px 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 30px 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 30px 1fr 1fr 1fr 1fr 200px;
+        grid-template-rows: 30px 1fr 1fr 1fr 1fr 200px;
     padding-top: 5%;
   }
   body .containercomplet .titleshoes {
@@ -465,8 +465,8 @@
 
 @media only screen and (max-width: 520px) {
   body {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: auto;
+    padding-right: auto;
   }
   body .menusection {
     text-align: center;
