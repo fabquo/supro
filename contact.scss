@@ -1,72 +1,169 @@
+*{
 
-body{
+    box-sizing: border-box;
+}
+body {
     margin: 0;
     padding: 0;
 }
-main{
 
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr fr 1fr 1fr;
-    grid-template-areas: 
-    "storelocator storelocator storelocator storelocator"
-    "lesformulaires lesformulaires lesformulaires  lesformulaires"
-    "storelist map map map"
-    "storelist map map map"
-    "media media payements payements"
-    ;
-    
+main {
    
-}
-.storelocator{
-    color: white;
-    text-align: center;
-    background-color: rgb(60, 60, 60);
-    grid-area: storelocator;
+    width: 76%;
+    margin: auto;
+    padding: auto;
+    display: grid;
     
-
-}
-.lesformulaires{
-    grid-area: lesformulaires;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    
-.search1{
-    
-    background-color:red;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 4;
 
 
 }
-.search2{
-    background-color: blue;
+
+.storelocator {
+
+    grid-row: 1;
+    grid-column: 1/5;
+    background-color: rgb(150, 109, 82);
+    height: 200px;
+
+
+}
+// .lesform{
+
+//     display: flex;
+//     justify-content: center;
+//     margin: auto;
+//     padding: auto;
+// }
+
+
+.search1 {
+
+    width: 405px;
+    margin-top: 150px;
+    // grid-row: 2;
+    // grid-column: 2/3;
+    margin-right: 30px;
+    border: 1px solid black;
+   
+    
     
     
 }
-.storelist{
-    grid-area: storelist;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 2;
-    grid-column-end: 3;
+.int1 {
+
+    
+    background-color: rgb(228, 197, 197);
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
     
 }
-.storeinterieur{
+.int1 p{
+
+    padding: 10px;
+}
+.int2{
+    background-color: rgb(0, 255, 170);
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+}
+.int2  p{
+
+    padding: 10px;
+}
+.int3button{
+
+    background-color: rgb(0, 26, 255);
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+
+
+.search2 {
+
+    width: 405px;
+    margin-top: 150px;
+    grid-row: 2;
+    grid-column: 3/4;
+    margin-left: 30px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: repeat(4 ,1fr);
+    // display: flex;
+    // flex-direction: column;
+    // align-content: space-between;
+    
+}
+.interieur1{
+    background-color: rgb(136, 182, 75);
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    label input{
+        
+        width: 100%;
+        
+    }
+    
+    
+    
+
+}
+.interieur2{
+    background: rgb(218, 184, 218);
+    padding-left: 20px;
+    padding-right: 20px;
+    label input{
+
+        width: 100%;
+    }
+}
+.interieur3{
+    background-color: cornflowerblue;
+    padding-left: 20px;
+    
+}
+.storelist {
+
+    grid-row: 3;
+    grid-column: 2/3;
+    width: 500px;
+    
+}
+
+.storeinterieur {
+
+
+    border: 1px solid black;
+
+}
+
+.map {
+
+    background-color: rgb(255, 255, 255);
+    grid-row: 3;
+    grid-column: 3/4;
+    padding: 20px;
+
+
+}
+
+.media {
+
+    background-color: red;
+    grid-row: 4;
+    grid-column: 2/3;
+
+}
+
+.payements {
+
     background-color: green;
-}
-.map{
-    grid-area: map;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 3;
-    grid-column-end: 4;
-}
-.media{
-    grid-area: media;
-}
-.payements{
-    grid-area: payements;
-
+    grid-row: 4;
+    grid-column: 3/4;
 }

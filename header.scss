@@ -1,3 +1,7 @@
+$black:#222;
+$grey:#999;
+$orange:#f68773;
+
 body{
 
     margin: 0;
@@ -16,6 +20,7 @@ header{
     "img nav form section";
     padding-top: 25px;
     padding-left: 80px;
+    background-color: rgb(242, 237, 233);
     
 }
 img{
@@ -35,8 +40,16 @@ nav ul {
     flex-direction: row;
     justify-content: space-around;
     list-style: none;
+    text-decoration: none; color: white; 
+    font-weight: bold;
+    font-size: 20px
      
     
+}
+nav a{
+
+  text-decoration: none; 
+  color: $black; 
 }
 form{
     
@@ -45,9 +58,13 @@ form{
     justify-content: flex-end;
     height: 30px;
     padding-top: 3%;
+       
+}
+form input {
 
-
-    
+    border-radius: 10px;
+    opacity: 0.5;
+    outline: 0 none;
 }
 section{
     
