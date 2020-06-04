@@ -144,14 +144,25 @@ $bgrey: rgba($color: #999999, $alpha: 0.5);
                 .thumb{
                     grid-column: 1;
                     grid-row: 10;
-                    display: grid;
-                    grid-gap: 10px;
-                    grid-template-columns: 4;
-                    grid-template-rows: 1;
+                    display: flex;
+                    // grid-gap: 10px;
+                    // grid-template-columns: 4;
+                    // grid-template-rows: 1;
                     height: 100%;
-                    width: 50%;
+                    width: 100%;
+                    justify-content: space-between;
                     :first-child{
                         opacity: 1;
+                        // justify-self: left;
+                    }
+                    :nth-child(2){
+                        // justify-self: center;
+                    }
+                    :nth-child(3){
+                        // justify-self: center;
+                    }
+                    :last-child{
+                        // justify-self: right;
                     }
                     figure{
                         @include figmargin;
@@ -202,17 +213,18 @@ $bgrey: rgba($color: #999999, $alpha: 0.5);
             }
             div.select{
                 display: flex;
+                flex-wrap: wrap;
                 flex-direction: row;
                 height: 20px;
                 justify-content: space-between;
                 margin-top: 15px;
                 .qty{
                     display: flex;
-                    border: solid 2px $grey;
+                    border: solid 2px $bgrey;
                     float: left;
                     height: 18px;
                     padding: 10px;
-                    width: 40%;
+                    width: 30%;
                     justify-content: space-between;
                     i{
                         font-size: 12px;
@@ -234,10 +246,14 @@ $bgrey: rgba($color: #999999, $alpha: 0.5);
                 padding-top: 15px;
                 }
                 .heart{
-                    height: 42px;
-                    margin-top: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    border: solid 2px $bgrey;
+                    height: 38px;
+                    width: 42px;
+                    text-align: center;
                 }
-            }
             div.buy{
                 display: block;
                 height: 42px;
@@ -255,9 +271,11 @@ $bgrey: rgba($color: #999999, $alpha: 0.5);
                     padding-top: 15px;
                     }
             }
+        }
             div.resume{
                 grid-column: 2;
                 border-top: solid 1px $bgrey;
+                margin-top: 25%;
                 p{
                     font-size: 12px;
                 }

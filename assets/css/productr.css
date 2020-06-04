@@ -1,6 +1,7 @@
 @media only screen and (max-width: 768px) {
   body {
-    overflow-x: hidden; }
+    overflow-x: hidden;
+    letter-spacing: .2em; }
   header.tophead {
     display: grid;
     width: 85%;
@@ -91,17 +92,411 @@
           visibility: visible;
           width: auto; }
           header.tophead section a.burger i {
-            width: auto; } }
-
-@media only screen and (max-width: 520px) {
-  body {
-    overflow-x: hidden; }
+            width: auto; }
   .subtitle {
     font-size: 24px;
     font-weight: bold; }
   .comments {
     font-size: 12px;
     letter-spacing: .1em; }
+  main {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto; }
+    main nav {
+      margin-top: 10%; }
+      main nav ul {
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px; }
+        main nav ul.nodeco {
+          display: flex;
+          justify-content: left;
+          list-style: none;
+          flex-direction: row;
+          font-size: 18px; }
+          main nav ul.nodeco li {
+            font-size: 18px;
+            letter-spacing: .1em;
+            padding-left: 10px;
+            text-transform: none; }
+    main .gallerie {
+      display: grid;
+      margin-top: 5%;
+      column-gap: 0%;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto; }
+      main .gallerie .grosplan {
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        width: auto;
+        grid-column: 1; }
+        main .gallerie .grosplan img {
+          width: 100%; }
+      main .gallerie .thumb {
+        grid-column: 1;
+        display: flex;
+        margin-top: 10px;
+        height: 100%;
+        width: 100%;
+        justify-content: space-between; }
+        main .gallerie .thumb :nth-child(1) {
+          opacity: 1; }
+        main .gallerie .thumb :nth-child(2) {
+          position: relative;
+          visibility: visible;
+          flex-grow: 0;
+          width: auto;
+          margin-right: 0px;
+          order: 0; }
+          main .gallerie .thumb :nth-child(2) img {
+            width: 100%;
+            margin-right: 0px; }
+        main .gallerie .thumb figure {
+          margin-block-start: 0em;
+          margin-block-end: 0em;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+          opacity: 0.5;
+          grid-row: 1; }
+    main .col2 {
+      grid-column: 1;
+      padding-bottom: 0px;
+      margin-top: 5%; }
+      main .col2 .review {
+        padding-left: 15px; }
+    main .artname {
+      margin-top: 5%;
+      grid-column: 1;
+      padding-bottom: 0px;
+      font-size: 18px; }
+    main .ref {
+      margin-top: 5%;
+      grid-column: 1;
+      font-size: 10px;
+      letter-spacing: 0em; }
+    main .artprice {
+      margin-top: 5%;
+      padding-bottom: 0px; }
+      main .artprice del {
+        padding-left: 10px; }
+    main .desc {
+      padding-top: 5%;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px; }
+    main .colortitle {
+      margin-top: 5%; }
+    main .colorselect {
+      font-size: 16px;
+      letter-spacing: 0.1em;
+      margin-top: 2%; }
+      main .colorselect i {
+        padding-right: 10px; }
+    main .sizesel {
+      margin-top: 5%; }
+    main .artsize {
+      font-size: 16px; }
+    main div.select {
+      display: grid;
+      grid-template-columns: 80% 20%;
+      flex-direction: row;
+      height: 20px;
+      justify-content: space-between;
+      margin-top: 5%;
+      width: auto;
+      height: 100%; }
+      main div.select .qty {
+        display: flex;
+        grid-row: 1;
+        grid-column: 1 / 3;
+        border: solid 2px #999;
+        float: left;
+        height: 18px;
+        padding: 10px;
+        width: auto;
+        justify-content: space-between;
+        flex-direction: row; }
+        main div.select .qty i {
+          font-size: 12px;
+          padding-top: 5px; }
+        main div.select .qty span {
+          align-content: center; }
+      main div.select .cart {
+        grid-row: 2;
+        grid-column: 1;
+        background: #222;
+        color: white;
+        font-size: 12px;
+        width: 100%;
+        height: 27px;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 15px;
+        margin-top: 5%; }
+      main div.select .heart {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-self: right;
+        margin-top: 20%;
+        border: solid 2px rgba(153, 153, 153, 0.5);
+        height: 38px;
+        width: 42px;
+        text-align: center; }
+    main div.buy {
+      display: block;
+      height: 42px;
+      margin-top: 15px;
+      width: 100%;
+      grid-column: 1 / 3; }
+      main div.buy .cart {
+        background: #222;
+        color: white;
+        font-size: 12px;
+        width: 100%;
+        height: 27px;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 15px; }
+    main div.resume {
+      grid-column: 1;
+      grid-row: 20;
+      border-top: solid 1px rgba(153, 153, 153, 0.5);
+      margin-top: 10%; }
+      main div.resume p {
+        font-size: 12px; }
+    main div.desctab {
+      display: flex;
+      flex-direction: column; }
+      main div.desctab .banner {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        border-top: solid 1px rgba(153, 153, 153, 0.5);
+        border-bottom: solid 1px rgba(153, 153, 153, 0.5);
+        font-size: 14px;
+        letter-spacing: .1em;
+        grid-column: 1 / 5;
+        padding-top: 5%;
+        margin-top: 5%; }
+        main div.desctab .banner span {
+          padding-right: 15px;
+          align-self: center;
+          margin-bottom: 5%; }
+      main div.desctab .introduction {
+        grid-column: 1 / 3;
+        margin-top: 5%; }
+        main div.desctab .introduction p.comments {
+          line-height: 20px; }
+      main div.desctab .features {
+        grid-column: 1 / 3;
+        border-bottom: solid 1px rgba(153, 153, 153, 0.5); }
+        main div.desctab .features li {
+          margin-top: 10px; }
+      main div.desctab .imgprd {
+        grid-column: 3 / 5;
+        grid-row: 2 / 4;
+        margin-top: 10%; }
+        main div.desctab .imgprd figure {
+          margin-block-start: 0em;
+          margin-block-end: 0em;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+          margin-left: 0%; }
+          main div.desctab .imgprd figure img {
+            width: 100%; }
+    main .reltab {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; }
+      main .reltab .rproduct {
+        grid-column: 1 / 5;
+        grid-row: 1;
+        margin-top: 10%; }
+        main .reltab .rproduct .subtitle {
+          text-align: center; }
+        main .reltab .rproduct div {
+          visibility: hidden;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          height: Opx; }
+          main .reltab .rproduct div span.cgrey.comments {
+            margin-top: 3px; }
+          main .reltab .rproduct div span a {
+            padding-left: .5em; }
+      main .reltab .relgallery {
+        grid-row: 2;
+        grid-column: 1 / 5;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin-top: 10%;
+        grid-column-gap: 5%; }
+        main .reltab .relgallery .l1 {
+          grid-column: 1;
+          grid-row: 1;
+          width: 100%; }
+          main .reltab .relgallery .l1 figure {
+            width: 100%;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px; }
+            main .reltab .relgallery .l1 figure img {
+              width: 100%; }
+        main .reltab .relgallery .l2 {
+          grid-column: 2;
+          grid-row: 1;
+          width: 100%; }
+          main .reltab .relgallery .l2 figure {
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px; }
+            main .reltab .relgallery .l2 figure img {
+              width: 100%; }
+        main .reltab .relgallery .l3 {
+          grid-column: 1;
+          grid-row: 2;
+          width: 100%; }
+          main .reltab .relgallery .l3 figure {
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px; }
+            main .reltab .relgallery .l3 figure img {
+              width: 100%; }
+        main .reltab .relgallery .l4 {
+          grid-column: 2;
+          grid-row: 2;
+          width: 100%; }
+          main .reltab .relgallery .l4 figure {
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px; }
+            main .reltab .relgallery .l4 figure img {
+              width: 100%; }
+        main .reltab .relgallery * > .label {
+          margin-top: 10px;
+          width: 100%; }
+          main .reltab .relgallery * > .label .linkwou {
+            font-size: 12px;
+            text-transform: none;
+            letter-spacing: .1em; }
+        main .reltab .relgallery * > .artname {
+          font-size: 12px; }
+        main .reltab .relgallery * > .artprice.gal {
+          display: flex;
+          flex-direction: row;
+          margin-top: 5px;
+          margin-bottom: 5%;
+          font-size: 12px;
+          width: 100%; }
+          main .reltab .relgallery * > .artprice.gal del {
+            padding-left: 0%; }
+          main .reltab .relgallery * > .artprice.gal .black {
+            padding-left: .5em; }
+      main .reltab .bottomsec {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        grid-column: 1 / 5;
+        margin-top: 10%;
+        width: 100%; }
+        main .reltab .bottomsec .dot {
+          height: 10px;
+          width: 10px;
+          border-radius: 50%;
+          background: #f68773; }
+        main .reltab .bottomsec .line {
+          margin-left: 10px;
+          height: 10px;
+          width: 30px;
+          border-radius: 5px;
+          background: #f68773; }
+  .linkbanner {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 0px 1fr 1fr 1fr;
+    grid-template-rows: 1;
+    margin-top: 100px; }
+    .linkbanner ul:first-of-type {
+      visibility: hidden; }
+    .linkbanner ul {
+      display: grid;
+      grid-template-columns: 1;
+      grid-template-rows: repeat(5, 15%);
+      list-style: none;
+      color: #999;
+      padding-inline-start: 0px; }
+      .linkbanner ul li:first-of-type {
+        color: #222;
+        padding-bottom: 10%;
+        font-size: 12px; }
+      .linkbanner ul li span {
+        color: #999;
+        font-size: 10px;
+        font-weight: lighter; }
+        .linkbanner ul li span i.google {
+          font-size: 2em;
+          float: left; }
+      .linkbanner ul li a {
+        color: #999;
+        font-size: 10px;
+        font-weight: lighter; }
+  .ban {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1;
+    width: 85%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto; }
+    .ban .copyright {
+      font-size: 12px;
+      letter-spacing: normal; }
+      .ban .copyright strong {
+        color: #222; }
+    .ban .social {
+      justify-self: center;
+      margin-top: 10px; }
+      .ban .social a {
+        color: #999; }
+    .ban .payement {
+      display: flex;
+      justify-self: right; }
+      .ban .payement figure {
+        margin-block-end: 0px;
+        margin-block-start: 0px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-left: 10px; } }
+
+@media only screen and (max-width: 520px) {
+  body {
+    overflow-x: hidden;
+    letter-spacing: .2em; }
   header.tophead {
     display: grid;
     width: 85%;
@@ -126,9 +521,9 @@
         background: white;
         margin-top: 0px;
         z-index: 1;
-        width: 85%;
+        width: 90%;
         height: 50vh;
-        margin-left: 0px;
+        margin-left: -2.5%;
         text-align: left;
         transition: transform .6s ease-in-out;
         transform: translateY(-100%); }
@@ -192,6 +587,12 @@
           width: auto; }
           header.tophead section a.burger i {
             width: auto; }
+  .subtitle {
+    font-size: 24px;
+    font-weight: bold; }
+  .comments {
+    font-size: 12px;
+    letter-spacing: .1em; }
   main {
     width: 90%;
     margin-left: auto;
@@ -216,7 +617,7 @@
             text-transform: none; }
     main .gallerie {
       display: grid;
-      margin-top: 10%;
+      margin-top: 5%;
       column-gap: 0%;
       grid-template-columns: 1fr;
       grid-template-rows: auto; }
@@ -231,20 +632,20 @@
           width: 100%; }
       main .gallerie .thumb {
         grid-column: 1;
-        display: grid;
-        grid-gap: 10px;
+        display: flex;
         margin-top: 10px;
-        grid-template-columns: 3;
-        grid-template-rows: 1;
         height: 100%;
-        width: 50%; }
+        width: 100%;
+        justify-content: space-between; }
         main .gallerie .thumb :nth-child(1) {
           opacity: 1; }
         main .gallerie .thumb :nth-child(2) {
-          grid-row: 2;
+          position: absolute;
           visibility: hidden;
+          flex-grow: 0;
           width: 0px;
-          margin-right: 0px; }
+          margin-right: 0px;
+          order: 4; }
           main .gallerie .thumb :nth-child(2) img {
             width: 0px;
             margin-right: 0px; }
@@ -302,7 +703,8 @@
       height: 20px;
       justify-content: space-between;
       margin-top: 5%;
-      width: 100%; }
+      width: auto;
+      height: 100%; }
       main div.select .qty {
         display: flex;
         grid-row: 1;
@@ -311,7 +713,7 @@
         float: left;
         height: 18px;
         padding: 10px;
-        width: 100%;
+        width: auto;
         justify-content: space-between;
         flex-direction: row; }
         main div.select .qty i {
@@ -336,15 +738,21 @@
         padding-top: 15px;
         margin-top: 5%; }
       main div.select .heart {
-        grid-column: 2;
-        border: solid 1px rgba(153, 153, 153, 0.5);
-        height: 42px;
-        margin-top: 15px; }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-self: right;
+        margin-top: 20%;
+        border: solid 2px rgba(153, 153, 153, 0.5);
+        height: 38px;
+        width: 42px;
+        text-align: center; }
     main div.buy {
       display: block;
       height: 42px;
       margin-top: 15px;
-      width: 100%; }
+      width: 100%;
+      grid-column: 1 / 3; }
       main div.buy .cart {
         background: #222;
         color: white;
@@ -361,6 +769,295 @@
     main div.resume {
       grid-column: 1;
       grid-row: 20;
-      border-top: solid 1px rgba(153, 153, 153, 0.5); }
+      border-top: solid 1px rgba(153, 153, 153, 0.5);
+      margin-top: 10%; }
       main div.resume p {
-        font-size: 12px; } }
+        font-size: 12px; }
+    main div.desctab {
+      display: flex;
+      flex-direction: column; }
+      main div.desctab .banner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-top: solid 1px rgba(153, 153, 153, 0.5);
+        border-bottom: solid 1px rgba(153, 153, 153, 0.5);
+        font-size: 14px;
+        letter-spacing: .1em;
+        grid-column: 1 / 5;
+        padding-top: 5%;
+        margin-top: 5%; }
+        main div.desctab .banner span {
+          padding-right: 15px;
+          align-self: center;
+          margin-bottom: 5%; }
+      main div.desctab .introduction {
+        grid-column: 1 / 3;
+        margin-top: 10%; }
+        main div.desctab .introduction p.comments {
+          line-height: 20px; }
+      main div.desctab .features {
+        grid-column: 1 / 3;
+        border-bottom: solid 1px rgba(153, 153, 153, 0.5); }
+        main div.desctab .features li {
+          margin-top: 10px; }
+      main div.desctab .imgprd {
+        grid-column: 3 / 5;
+        grid-row: 2 / 4;
+        margin-top: 10%; }
+        main div.desctab .imgprd figure {
+          margin-block-start: 0em;
+          margin-block-end: 0em;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+          margin-left: 0%; }
+          main div.desctab .imgprd figure img {
+            width: 100%; }
+    main .reltab {
+      display: flex;
+      flex-direction: column; }
+      main .reltab .rproduct {
+        grid-column: 1 / 5;
+        grid-row: 1;
+        margin-top: 10%; }
+        main .reltab .rproduct .subtitle {
+          text-align: center; }
+        main .reltab .rproduct div {
+          visibility: hidden;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          height: Opx; }
+          main .reltab .rproduct div span.cgrey.comments {
+            margin-top: 3px; }
+          main .reltab .rproduct div span a {
+            padding-left: .5em; }
+      main .reltab .relgallery {
+        grid-row: 2;
+        grid-column: 1 / 5;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+        margin-top: 10%;
+        grid-column-gap: 5%; }
+        main .reltab .relgallery .l1 {
+          grid-column: 1;
+          grid-row: 2;
+          width: 100%; }
+          main .reltab .relgallery .l1 figure {
+            width: 100%;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px; }
+            main .reltab .relgallery .l1 figure img {
+              width: 100%; }
+        main .reltab .relgallery .l2 {
+          grid-column: 2;
+          grid-row: 2;
+          width: 100%; }
+          main .reltab .relgallery .l2 figure {
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px; }
+            main .reltab .relgallery .l2 figure img {
+              width: 100%; }
+        main .reltab .relgallery .l3 {
+          grid-column: 3;
+          grid-row: 2;
+          width: 100%; }
+          main .reltab .relgallery .l3 figure {
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px; }
+            main .reltab .relgallery .l3 figure img {
+              width: 100%; }
+        main .reltab .relgallery .l4 {
+          grid-column: 4;
+          grid-row: 2;
+          width: 100%; }
+          main .reltab .relgallery .l4 figure {
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px; }
+            main .reltab .relgallery .l4 figure img {
+              width: 100%; }
+        main .reltab .relgallery * > .label {
+          margin-top: 10px;
+          width: 100%; }
+          main .reltab .relgallery * > .label .linkwou {
+            font-size: 12px;
+            text-transform: none;
+            letter-spacing: .1em; }
+        main .reltab .relgallery * > .artname {
+          font-size: 12px; }
+        main .reltab .relgallery * > .artprice.gal {
+          display: flex;
+          flex-direction: row;
+          margin-top: 5px;
+          margin-bottom: 5%;
+          font-size: 12px;
+          width: 100%; }
+          main .reltab .relgallery * > .artprice.gal del {
+            padding-left: 0%; }
+          main .reltab .relgallery * > .artprice.gal .black {
+            padding-left: .5em; }
+      main .reltab .bottomsec {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        grid-column: 1 / 5;
+        margin-top: 10%;
+        width: 100%; }
+        main .reltab .bottomsec .dot {
+          height: 10px;
+          width: 10px;
+          border-radius: 50%;
+          background: #f68773; }
+        main .reltab .bottomsec .line {
+          margin-left: 10px;
+          height: 10px;
+          width: 30px;
+          border-radius: 5px;
+          background: #f68773; }
+  .linkbanner {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 0% 50% 50%;
+    grid-template-rows: 0px 1fr 1fr;
+    margin-top: 25px;
+    padding-bottom: 15px;
+    border-bottom: solid 0.5px #999; }
+    .linkbanner ul:first-of-type {
+      display: grid;
+      grid-template-columns: 0px;
+      grid-template-rows: 0px;
+      list-style: none;
+      color: #999;
+      padding-inline-start: 0px;
+      grid-template-columns: 1;
+      visibility: hidden;
+      width: 0px; }
+    .linkbanner ul:nth-child(2) {
+      display: grid;
+      grid-column: 2;
+      grid-row: 2;
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(5, 20%);
+      list-style: none;
+      color: #999;
+      padding-inline-start: 0px;
+      width: 100%; }
+      .linkbanner ul:nth-child(2) li:first-of-type {
+        color: #222;
+        padding-bottom: 10%;
+        font-size: 10px;
+        letter-spacing: .2em; }
+      .linkbanner ul:nth-child(2) li span {
+        color: #999;
+        font-size: 9px;
+        font-weight: lighter; }
+        .linkbanner ul:nth-child(2) li span i.google {
+          font-size: 2em;
+          float: left; }
+      .linkbanner ul:nth-child(2) li a {
+        color: #999;
+        font-size: 8px;
+        font-weight: lighter;
+        letter-spacing: .2em; }
+    .linkbanner ul:nth-child(3) {
+      display: grid;
+      grid-column: 3;
+      grid-row: 2;
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(5, 20%);
+      list-style: none;
+      color: #999;
+      padding-inline-start: 0px;
+      width: 100%; }
+      .linkbanner ul:nth-child(3) li:first-of-type {
+        color: #222;
+        padding-bottom: 10%;
+        font-size: 10px;
+        letter-spacing: .2em; }
+      .linkbanner ul:nth-child(3) li span {
+        color: #999;
+        font-size: 9px;
+        font-weight: lighter; }
+        .linkbanner ul:nth-child(3) li span i.google {
+          font-size: 2em;
+          float: left; }
+      .linkbanner ul:nth-child(3) li a {
+        color: #999;
+        font-size: 8px;
+        font-weight: lighter;
+        letter-spacing: .2em; }
+    .linkbanner ul:nth-child(4) {
+      display: grid;
+      grid-column: 2;
+      grid-row: 3;
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(5, 20%);
+      list-style: none;
+      color: #999;
+      padding-inline-start: 0px;
+      width: 100%; }
+      .linkbanner ul:nth-child(4) li:first-of-type {
+        color: #222;
+        padding-bottom: 10%;
+        font-size: 10px;
+        letter-spacing: .2em; }
+      .linkbanner ul:nth-child(4) li span {
+        color: #999;
+        font-size: 9px;
+        font-weight: lighter; }
+        .linkbanner ul:nth-child(4) li span i.google {
+          font-size: 2em;
+          float: left; }
+      .linkbanner ul:nth-child(4) li a {
+        color: #999;
+        font-size: 8px;
+        font-weight: lighter;
+        letter-spacing: .2em; }
+  .ban {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    width: 85%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto; }
+    .ban .copyright {
+      grid-column: 1 / 2;
+      font-size: 12px;
+      letter-spacing: normal; }
+      .ban .copyright strong {
+        color: #222; }
+    .ban .social {
+      visibility: hidden;
+      width: 0px;
+      display: flex;
+      justify-self: right;
+      margin-top: 10px; }
+      .ban .social a {
+        color: #999;
+        width: 0px; }
+    .ban .payement {
+      visibility: hidden;
+      display: flex;
+      justify-self: right;
+      width: 0px; }
+      .ban .payement figure {
+        width: 0px;
+        margin-block-end: 0px;
+        margin-block-start: 0px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-left: 10px; } }

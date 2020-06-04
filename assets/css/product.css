@@ -98,12 +98,10 @@
       main .gallerie .thumb {
         grid-column: 1;
         grid-row: 10;
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: 4;
-        grid-template-rows: 1;
+        display: flex;
         height: 100%;
-        width: 50%; }
+        width: 100%;
+        justify-content: space-between; }
         main .gallerie .thumb :first-child {
           opacity: 1; }
         main .gallerie .thumb figure {
@@ -149,17 +147,18 @@
         font-size: 16px; }
       main .gallerie div.select {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         height: 20px;
         justify-content: space-between;
         margin-top: 15px; }
         main .gallerie div.select .qty {
           display: flex;
-          border: solid 2px #999;
+          border: solid 2px rgba(153, 153, 153, 0.5);
           float: left;
           height: 18px;
           padding: 10px;
-          width: 40%;
+          width: 30%;
           justify-content: space-between; }
           main .gallerie div.select .qty i {
             font-size: 12px;
@@ -180,29 +179,35 @@
           vertical-align: middle;
           padding-top: 15px; }
         main .gallerie div.select .heart {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          border: solid 2px rgba(153, 153, 153, 0.5);
+          height: 38px;
+          width: 42px;
+          text-align: center; }
+        main .gallerie div.select div.buy {
+          display: block;
           height: 42px;
-          margin-top: 15px; }
-      main .gallerie div.buy {
-        display: block;
-        height: 42px;
-        margin-top: 15px;
-        width: 100%; }
-        main .gallerie div.buy .cart {
-          background: #222;
-          color: white;
-          font-size: 12px;
-          width: 100%;
-          height: 27px;
-          margin-block-start: 0em;
-          margin-block-end: 0em;
-          margin-inline-start: 0px;
-          margin-inline-end: 0px;
-          text-align: center;
-          vertical-align: middle;
-          padding-top: 15px; }
+          margin-top: 15px;
+          width: 100%; }
+          main .gallerie div.select div.buy .cart {
+            background: #222;
+            color: white;
+            font-size: 12px;
+            width: 100%;
+            height: 27px;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            text-align: center;
+            vertical-align: middle;
+            padding-top: 15px; }
       main .gallerie div.resume {
         grid-column: 2;
-        border-top: solid 1px rgba(153, 153, 153, 0.5); }
+        border-top: solid 1px rgba(153, 153, 153, 0.5);
+        margin-top: 25%; }
         main .gallerie div.resume p {
           font-size: 12px; }
     main div.desctab {
