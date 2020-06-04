@@ -144,14 +144,14 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   justify-self: start;
+  margin-top: 20px;
 }
 
 .storeinterieur1 {
   width: 350px;
   height: 240px;
   border: 1px solid black;
-  resize: vertical;
-  border: 1px solid black;
+  padding: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,22 +159,31 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .storeinterieur1 img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.storeinterieur1 div {
+  padding: 10px;
+}
+
+.storeinterieur1 div p:nth-child(1) {
+  font-weight: bold;
+}
+
+.storeinterieur1 .interieur3 {
+  margin-top: inherit;
+  margin: inherit;
 }
 
 .storeinterieur2 {
   width: 350px;
   height: 240px;
   border: 1px solid black;
-  resize: vertical;
+  padding: 15px;
   border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -190,15 +199,28 @@ main {
 }
 
 .storeinterieur2 img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.storeinterieur2 div {
+  padding: 10px;
+}
+
+.storeinterieur2 div p:nth-child(1) {
+  font-weight: bold;
+}
+
+.storeinterieur2 .interieur3 {
+  margin-top: inherit;
+  margin: inherit;
 }
 
 .storeinterieur3 {
   width: 350px;
   height: 240px;
   border: 1px solid black;
-  resize: vertical;
+  padding: 15px;
   border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -214,8 +236,21 @@ main {
 }
 
 .storeinterieur3 img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.storeinterieur3 div {
+  padding: 10px;
+}
+
+.storeinterieur3 div p:nth-child(1) {
+  font-weight: bold;
+}
+
+.storeinterieur3 .interieur3 {
+  margin-top: inherit;
+  margin: inherit;
 }
 
 .map {
