@@ -1,0 +1,174 @@
+@font-face{
+    font-family: roboto;
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+$black:#222;
+$grey:#999;
+$orange:#f68773;
+
+
+body{
+    font-family:roboto;
+    color: $black;
+    letter-spacing: .2em;
+}
+
+.preview{
+    font-size: 18px;
+    color: $orange;
+    padding-bottom: 5%;
+}
+.artnameh1{
+    font-size: 82px;
+    font-weight: bold;
+    padding-bottom: 10%;
+}
+.link{
+    padding-bottom: 5px;
+    border-bottom: solid 1px $black;
+    font-size: 14px;
+    font-weight: bold;
+    color: $black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.linkwou{
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: $black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.wlink{
+    padding-bottom: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-bottom: solid 1px white;
+}
+.wlinkwou{
+    padding-bottom: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.bartnameh3{
+    font-size: 44px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+.cgrey {
+    color: $grey;
+    &.gal{
+        font-size: 12px;
+        letter-spacing: .1em;
+        padding-bottom: 5px;
+    }
+}
+.com{
+    font-size: 18px;
+    padding-bottom: 5%;
+}
+.wartnameh3{
+    color: white;
+    font-size: 44px;
+    font-weight: bold;
+    padding-bottom: 15%;
+}
+.stitle{
+    grid-row: 1;
+    grid-column: 1;
+    margin-top: 100px;
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.artname{
+    font-size: 26px;
+    font-weight: bold;
+    padding-bottom: 5%;
+    &.gal{
+        font-size: 12px;
+        letter-spacing: .1em;
+        padding-bottom: 5px;
+        max-width: 250px;
+    }
+}
+
+.artprice{
+    padding-bottom: 25px;
+    &.gal{
+        letter-spacing: .1em;
+        padding-bottom: 5px;
+    }
+}
+.artrate{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5px;
+}
+.checked{
+    color: $orange;
+}
+.artcolor{
+    display: flex;
+    flex-direction: row;
+    *.red{
+        color: red;
+    }
+    *.orange{
+        color: orange;
+    }
+    *.blue{
+        color: blue;
+    }
+}
+.size{
+    background-color: rgba(200,200,200, 0.5);
+    text-align: center;
+    padding-left: 2px;
+    border-radius: 50%;
+}
+.promo{
+    margin-top: 20px;
+}
+.midprice{
+    color: white;
+    padding:{
+        left: 10px;
+        top: 5px;
+        bottom: 5px;
+    }
+    font-weight: bold;
+    text-align: center;
+    border-radius: 3px;
+    background-color: $orange;
+}
+.instock{
+    color: white;
+    padding:{
+        left: 10px;
+        right: 5px;
+        top: 5px;
+        bottom: 5px;
+    }
+    font-weight: bold;
+    margin-left: 5px;
+    text-align: center;
+    border-radius: 3px;
+    background-color: green;
+}
+.oraname{
+    color:$orange;
+    &.gal{
+        font-size: 12px;
+        letter-spacing: .1em;
+        padding-bottom: 5px;
+    }
+}
