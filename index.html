@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Supro. is an clothes online shop">
+    <meta name="author" content="Supro.">
+    <meta name="keywords" content="Supro, Online, Shop, Webshop, Clothes, Shoes, Glasses, Adasdi, Bags, Hairband">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/homer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="assets/js/countdown.js"></script>
-    <title>Supro.</title>
+    <script src="assets/js/countdown.js"></script>
+    <title>Supro. - Webshop</title>
 </head>
 <body>
+    <!-- The Tophead section is the one containing mains links, search block, icons menu and the supro logo ! -->
     <header class="tophead">
-        <img src="images/logo.png" alt="">
+        <img src="images/logo.png" alt="Supro Logo">
         <nav class="burger">
             <ul>
-                <li><a class="linkwou"href="index.html">Home</a><span><a class="bburger" href="#"><i class="fa fa-times cgrey"></i></a></span></li>
-                <li><a class="linkwou"href="shop.html">Shop</a></li>
-                <li><a class="linkwou"href="product.html">Products</a></li>
-                <li><a class="linkwou"href="#">Pages</a></li>
-                <li><a class="linkwou"href="#">Blog</a></li>
-                <li><a class="linkwou"href="#">Contact</a></li>
+                <li><a class="linkwou" href="index.html">Home</a><span><a class="bburger" href="#"><i class="fa fa-times cgrey"></i></a></span></li>
+                <!-- The bburger class is the one who make burger menu possible !
+                The javascript listening this href element to start the transition of the menu -->
+                <li><a class="linkwou" href="shop.html">Shop</a></li>
+                <li><a class="linkwou" href="product.html">Products</a></li>
+                <li><a class="linkwou" href="#">Pages</a></li>
+                <li><a class="linkwou" href="#">Blog</a></li>
+                <li><a class="linkwou" href="#">Contact</a></li>
             </ul>
         </nav>
         <form>
@@ -36,6 +42,7 @@
             <a class="bburger" href="#"><i class="fa fa-bars cgrey"></i></a>
         </section>
     </header>
+    <!-- The header home section is a grid with a background image, more easier to add an aside menu with network menu and title of the article -->
     <section class="headerhome">
         <!--Social Network Menu-->
         <aside>
@@ -44,21 +51,21 @@
             <a href="www.google.com"><i class="fa fa-google-plus"></i></a>
             <a href="www.pinterest.com"><i class="fa fa-pinterest-p"></i></a>
         </aside>
-        <!--Splash Screen Woman Shoes-->
         <article class="headshoes">
             <div>
                 <header>
                     <div class="label">
                         <div class="preview">Next SS Preview</div>
-                        <div class="artnameh1">Woman Shoes</div>
+                        <h1 class="artnameh1">Woman Shoes</h1>
                         <a class="link" href="#">Discover more</a>
                     </div>
                 </header>
             </div>
         </article>
     </section>
-    <!-- Fin Section headerhome / CSS Terminé (Main & Home)-->
-        <!--3 products banner-->
+    <!-- headerhome sectione ending here
+    3 products banner start here 
+    it contains a grid with 3 columns, all the images are used as background-->
     <section class="homebanner">
         <article class="hbanner1">
                 <header class="aleft">
@@ -83,11 +90,10 @@
                 </header>
         </article>
     </section>
-<!-- Fin Homebanner / CSS Terminé (Main & Home)-->
-<!-- Début section main -->
+<!-- Homebanner section ending here
+    Main container start -->
     <main>
-        <!-- Top Sellers Section -->
-        <!-- Titre -->
+        <!-- Top Sellers Section start-->
         <section class="sectitle">
             <div class="stitle">
                 Top Sellers
@@ -95,7 +101,6 @@
             <div class="cgrey com">
                 Browse the huge variety of our products
             </div>
-        <!-- fin du titre de la section -->
         </section>
         <section class="gridtop">
             <article class="ts1">
@@ -159,9 +164,8 @@
                     </header>
             </article>
         </section>
-        <!-- Fin Top Sellers / CSS main + home terminés-->
-        <!--New Arrival Section-->
-        <!-- Titre -->
+        <!--Top Sellers end
+        New Arrival Section start-->
         <section class="sectitle">
             <div class="newarrival">
                 New Arrival
@@ -179,12 +183,11 @@
                 </ul>
             </nav>
         </section>
-        <!-- Fin du titre de la section -->
         <section class="gridgallery">
             <article>
                 <figure>
-                    <a href="images/prd_09_1_1_5.jpg" target="_blanck">
-                        <img src="images/prd_09_1_1_5.jpg" alt="">
+                    <a href="images/prd_09_1_1_5.jpg" target="_blank">
+                        <img src="images/prd_09_1_1_5.jpg" alt="Tuk Peacock">
                     </a>
                 </figure>
                 <div>
@@ -211,8 +214,8 @@
             </article>
             <article>
                 <figure>
-                    <a href="images/prd_08_1_6.jpg" target="_blanck">
-                        <img src="images/prd_08_1_6.jpg" alt="">
+                    <a href="images/prd_08_1_6.jpg" target="_blank">
+                        <img src="images/prd_08_1_6.jpg" alt="Contour Skinny">
                     </a>
                 </figure>
                 <div>
@@ -242,8 +245,8 @@
             </article>
             <article>
                 <figure>
-                    <a href="images/prd_07_1_2.jpg" target="_blanck">
-                        <img src="images/prd_07_1_2.jpg" alt="">
+                    <a href="images/prd_07_1_2.jpg" target="_blank">
+                        <img src="images/prd_07_1_2.jpg" alt="Stretch-Cloque Top">
                     </a>
                 </figure>
                 <div>
@@ -271,8 +274,8 @@
             </article>
             <article>
                 <figure>
-                    <a href="images/prd_06_1_2.jpg" target="_blanck">
-                        <img src="images/prd_06_1_2.jpg" alt="">
+                    <a href="images/prd_06_1_2.jpg" target="_blank">
+                        <img src="images/prd_06_1_2.jpg" alt="Fashion Handbags">
                     </a>
                 </figure>
                 <div>
@@ -287,8 +290,8 @@
             </article>
             <article>
                 <figure>
-                    <a href="images/prd_05_1_2.jpg" target="_blanck">
-                        <img src="images/prd_05_1_2.jpg" alt="">
+                    <a href="images/prd_05_1_2.jpg" target="_blank">
+                        <img src="images/prd_05_1_2.jpg" alt="Full Length Denim">
                     </a>
                 </figure>
                 <div>
@@ -312,8 +315,8 @@
             </article>
             <article>
                 <figure>
-                    <a href="images/prd_04_1.jpg" target="_blanck">
-                        <img src="images/prd_04_1.jpg" alt="">
+                    <a href="images/prd_04_1.jpg" target="_blank">
+                        <img src="images/prd_04_1.jpg" alt="Cyan Boheme">
                     </a>
                 </figure>
                 <div>
@@ -336,12 +339,9 @@
             </footer>
         </section>
     </main>
-<!--Deal of the day-->
+<!--Deal of the day section start-->
     <section class="dotd">
         <article>
-            <!-- <figure>
-                <img src="images/deals_image.jpg" alt="">
-            </figure> -->
                 <header>
                     <div class="label">
                         <div class="cgrey com">
@@ -366,6 +366,7 @@
                                 In stock
                             </span>
                         </div>
+                        <!-- Find the JS Countdown here !-->
                         <div class="cdgrid">
                             <span id="days"></span>
                             <span id="hours"></span>
@@ -383,8 +384,8 @@
                 </header>
         </article>
     </section>
-    <!-- Fin de section Deal of the Day - CSS Terminé -->
-<!--Latest news-->
+    <!-- Fin de section Deal of the Day
+    Latest news start-->
     <section class="lastnews">
         <div class="stitle">
             Latest News
@@ -463,8 +464,8 @@
             </header>
         </div>
     </section>
-<!-- Fin Latest News - CSS Terminé-->
-<!--Keep Connected-->
+<!-- Latest News end
+Keep Connected start-->
     <section class="lastnews">
         <div class="stitle">
             Keep Connected
@@ -478,15 +479,15 @@
                 <a href="#" class="linkwou">Subscribe</a>
         </div>
     </section>
-    <!-- Fin Section Keep Connected - CSS Terminé -->
+    <!--Keep Connected end-->
     <section class="followbanner">
-                <img src="images/foba1.jpg" alt="">
-                <img src="images/foba2.jpg" alt="">
-                <img src="images/foba3.jpg" alt="">
-                <img src="images/foba4.jpg" alt="">
-                <img src="images/foba5.jpg" alt="">
-                <img src="images/foba6.jpg" alt="">
-                <img src="images/foba7.jpg" alt="">
+                <img src="images/foba1.jpg" alt="BannerPic1">
+                <img src="images/foba2.jpg" alt="BannerPic2">
+                <img src="images/foba3.jpg" alt="BannerPic3">
+                <img src="images/foba4.jpg" alt="BannerPic4">
+                <img src="images/foba5.jpg" alt="BannerPic5">
+                <img src="images/foba6.jpg" alt="BannerPic6">
+                <img src="images/foba7.jpg" alt="BannerPic7">
         <article class="followbloc">
             <div><a class="linkwou follow" href="#">FOLLOW US</a></div>
             <div><a class="linkwou hashtag" href="#">#SUPRO</a></div>
@@ -495,7 +496,7 @@
     <section class="linkbanner">
             <ul>
                 <li class="logo">
-                    <a href="#"><img src="images/logo.png" alt=""></a>
+                    <a href="#"><img src="images/logo.png" alt="Supro Logo"></a>
                 </li>
                 <li>
                     <span>
@@ -510,7 +511,7 @@
                         <i class="fa fa-envelope"></i>
                     </span>
                     <span>
-                        <a class="linkwou" href:"mailto:contact@company.com">contact@company.com</a>
+                        <a href="mailto:contact@company.com" class="linkwou">contact@company.com</a>
                     </span>
                 </li>
                 <li>
@@ -603,7 +604,7 @@
             </figure>
         </section>
     </footer>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="assets/js/burger.js"></script>
 </body>
 </html>
