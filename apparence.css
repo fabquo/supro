@@ -8,6 +8,15 @@
   src: url("resources/Roboto/Roboto-Regular.ttf");
 }
 
+.linkwou {
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #222;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 body {
   font-family: roboto;
   color: #222;
@@ -87,5 +96,25 @@ body footer .sociaux a {
   color: #999;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.fa-user {
+  text-transform: none;
+  color: #222;
+}
+
+.fa-heart {
+  text-transform: none;
+  color: #222;
+}
+
+.fa-shopping-cart {
+  text-transform: none;
+  color: #222;
+}
+
+.fa-cog {
+  text-transform: none;
+  color: #222;
 }
 /*# sourceMappingURL=apparence.css.map */

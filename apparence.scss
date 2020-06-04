@@ -11,7 +11,14 @@ $grey:#999;
 $orange:#f68773;
 $blue:#0457C0;
 $brown:#8C4B21;
-
+.linkwou{
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: $black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
 body{
     font-family: roboto;
     color: $black;
@@ -82,4 +89,19 @@ body{
         }
     }
 }
-
+.fa-user{
+    text-transform: none;
+    color: $black;
+}
+.fa-heart{
+    text-transform: none;
+    color: $black;
+}
+.fa-shopping-cart{
+    text-transform: none;
+    color: $black;
+}
+.fa-cog{
+    text-transform: none;
+    color: $black;
+}

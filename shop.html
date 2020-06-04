@@ -8,13 +8,37 @@
     <link rel="stylesheet" href="apparence.css">
     <link rel="stylesheet" href="disposition.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="styleslider.css">
 
     <title>shop</title>
 </head>
 
 <body>
-    <header>
-        <!-- Header généralisé -->
+    <!-- Header généralisé -->
+    <header class="tophead">
+        <img src="resources/logo.png" alt="supro logo">
+        <nav class="burger">
+            <ul>
+                <li><a class="linkwou" href="index.html">Home</a><span><a class="bburger" href="#"><i
+                                class="fa fa-times cgrey"></i></a></span></li>
+                <li><a class="linkwou" href="shop.html">Shop</a></li>
+                <li><a class="linkwou" href="product.html">Products</a></li>
+                <li><a class="linkwou" href="#">Pages</a></li>
+                <li><a class="linkwou" href="#">Blog</a></li>
+                <li><a class="linkwou" href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <form>
+            <input class="cgrey" type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="cgrey fa fa-search"></i></button>
+        </form>
+        <section>
+            <a href="#"><i class="fa fa-user cgrey"></i></a>
+            <a href="#"><i class="fa fa-heart cgrey"></i></a>
+            <a href="#"><i class="fa fa-shopping-cart cgrey"></i></a>
+            <a href="#"><i class="fa fa-cog cgrey"></i></a>
+            <a class="bburger" href="#"><i class="fa fa-bars cgrey"></i></a>
+        </section>
     </header>
     <main>
         <!-- menu -->
@@ -343,8 +367,10 @@
                     <!-- sous-titre PRICE-->
                     <div class="dsoustitre">PRICE</div>
                     <!-- regle slide -->
-                    <div class="slidecontainer">
-                        <input type="range" min="0" max="100" step="10" list="tickmarks" class="slider">
+                    <section class="range-slider">
+                        <span class="rangeValues"></span>
+                        <input value="0" min="0" max="100" step="1" type="range" list="tickmarks">
+                        <input value="100" min="0" max="100" step="1" type="range">
                         <datalist id="tickmarks">
                             <option value="0" label="0%">
                             <option value="10">
@@ -358,7 +384,9 @@
                             <option value="90">
                             <option value="100" label="100%">
                         </datalist>
-                    </div>
+                    </section>
+
+                </div>
                 </div>
                 <!-- BRAND -->
                 <div class="brand">
@@ -411,4 +439,6 @@
     </footer>
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="app.js"></script>
+    <script src="burger.js"></script>
+
 </body>
