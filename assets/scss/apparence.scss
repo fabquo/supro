@@ -1,0 +1,107 @@
+@font-face {
+    font-family: robotobold;
+    src: url("resources/Roboto/Roboto-Medium.ttf");
+}
+@font-face{
+    font-family: roboto;
+    src: url("resources/Roboto/Roboto-Regular.ttf");
+}
+$black:#222;
+$grey:#999;
+$orange:#f68773;
+$blue:#0457C0;
+$brown:#8C4B21;
+.linkwou{
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: $black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+body{
+    font-family: roboto;
+    color: $black;
+    .title{
+        font-size: 24px;
+        color: $black;
+        font-weight: bold;
+        letter-spacing: 0;
+        margin-bottom: 3%;
+    }
+    .title a{
+        font-size: 24px;
+        color: $black;
+        font-weight: bold;
+        letter-spacing: 0;
+
+    }
+    .fa-star{
+        color: $orange;
+    }
+    .circleblack i{
+        color: $black;
+    }
+    .circleblue i{
+        color: $blue;
+    }
+    .circlebrown i{
+        color: $brown;
+    }
+    .artprice{
+        color: $grey;
+    }
+    .rgrey{
+        text-decoration: line-through;
+    }
+    .newprice{
+        color: $black;
+    }
+    .sizecircle{
+        border-radius: 50% 50% 50% 50%;
+        background-color: rgba(200, 200, 200, 0.5);
+    }
+    .sizesquare{
+        border: solid;
+        margin-right: 5px;
+        color: $grey;
+        border-width: thin;
+    }
+    .menudroite{
+        padding-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: $grey;
+  .dsoustitre{
+      color: $black;
+      font-size: 16px;
+  }
+
+    }
+    footer{
+        .sociaux a{
+            padding-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: $grey;
+  text-transform: uppercase;
+  text-decoration: none;
+        }
+    }
+}
+.fa-user{
+    text-transform: none;
+    color: $black;
+}
+.fa-heart{
+    text-transform: none;
+    color: $black;
+}
+.fa-shopping-cart{
+    text-transform: none;
+    color: $black;
+}
+.fa-cog{
+    text-transform: none;
+    color: $black;
+}
