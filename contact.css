@@ -72,7 +72,7 @@ main {
 
 .int3button {
   margin: 20px;
-  margin-top: 30px;
+  margin-top: 50px;
   width: 100px;
   height: 50px;
   background-color: black;
@@ -122,7 +122,7 @@ main {
 
 .interieur3 {
   margin: 20px;
-  margin-top: 100px;
+  margin-top: 93px;
   width: 100px;
   height: 50px;
   background-color: black;
@@ -136,11 +136,86 @@ main {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: start;
 }
 
-.storeinterieur {
+.storeinterieur1 {
+  width: 350px;
+  height: 240px;
   border: 1px solid black;
+  resize: vertical;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.storeinterieur1 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.storeinterieur2 {
+  width: 350px;
+  height: 240px;
+  border: 1px solid black;
+  resize: vertical;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.storeinterieur2 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.storeinterieur3 {
+  width: 350px;
+  height: 240px;
+  border: 1px solid black;
+  resize: vertical;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.storeinterieur3 img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .map {
@@ -151,6 +226,24 @@ main {
   -ms-grid-column-span: 1;
   grid-column: 3/4;
   padding: 20px;
+  z-index: 1;
+}
+
+.map img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.show p {
+  position: absolute;
+  top: 1024px;
+  right: 596px;
+  width: 200px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  z-index: 2;
 }
 
 .media {
